@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "lamp_base",
+        "1": "case_base"
+      }
+    }
+  }
+}

@@ -36,6 +36,7 @@ public class LogicandcomputingsModItems {
 	public static final DeferredItem<Item> XN_OR_GATE;
 	public static final DeferredItem<Item> PULSEGENERATOR;
 	public static final DeferredItem<Item> MUX_SWITCH2X1;
+	public static final DeferredItem<Item> LAMP;
 	static {
 		BUFFER_GATE = block(LogicandcomputingsModBlocks.BUFFER_GATE);
 		WIRE = block(LogicandcomputingsModBlocks.WIRE);
@@ -49,6 +50,7 @@ public class LogicandcomputingsModItems {
 		XN_OR_GATE = block(LogicandcomputingsModBlocks.XN_OR_GATE);
 		PULSEGENERATOR = block(LogicandcomputingsModBlocks.PULSEGENERATOR);
 		MUX_SWITCH2X1 = block(LogicandcomputingsModBlocks.MUX_SWITCH2X1);
+		LAMP = block(LogicandcomputingsModBlocks.LAMP);
 	}
 
 	// Start of user code block custom items

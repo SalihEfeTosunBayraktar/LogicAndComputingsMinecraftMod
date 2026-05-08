@@ -71,5 +71,12 @@
   "gui.logicandcomputings.logic_gates_gui.label_final_signal": "Final Signal",
   "gui.logicandcomputings.logic_gates_gui.label_time": "Tick",
   "gui.logicandcomputings.logic_gates_gui.label_signal": "Signal",
-  "gui.logicandcomputings.logic_gates_gui.label_delay1": "Delay :"
+  "gui.logicandcomputings.logic_gates_gui.label_delay1": "Delay :",
+  "item.logicandcomputings.lamp": "Lamp",
+  "gui.logicandcomputings.lamp_gui.button_d": "D",
+  "gui.logicandcomputings.lamp_gui.button_e": "E",
+  "gui.logicandcomputings.lamp_gui.button_u": "U",
+  "gui.logicandcomputings.lamp_gui.button_s": "S",
+  "gui.logicandcomputings.lamp_gui.button_empty": "N",
+  "gui.logicandcomputings.lamp_gui.button_w": "W"
 }

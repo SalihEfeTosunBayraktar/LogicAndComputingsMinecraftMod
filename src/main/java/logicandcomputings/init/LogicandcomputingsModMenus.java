@@ -32,6 +32,7 @@ public class LogicandcomputingsModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<GuiNotGateMenu>> GUI_NOT_GATE = REGISTRY.register("gui_not_gate", () -> IMenuTypeExtension.create(GuiNotGateMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<WireGuiMenu>> WIRE_GUI = REGISTRY.register("wire_gui", () -> IMenuTypeExtension.create(WireGuiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<LogicGatesGuiMenu>> LOGIC_GATES_GUI = REGISTRY.register("logic_gates_gui", () -> IMenuTypeExtension.create(LogicGatesGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<LampGuiMenu>> LAMP_GUI = REGISTRY.register("lamp_gui", () -> IMenuTypeExtension.create(LampGuiMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

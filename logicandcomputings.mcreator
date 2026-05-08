@@ -3024,6 +3024,289 @@
         ]
       },
       "path": "~/Buffer_proc"
+    },
+    {
+      "name": "Lamp",
+      "type": "block",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "lamp",
+      "metadata": {
+        "files": [
+          "src/main/java/logicandcomputings/block/LampBlock.java",
+          "src/main/resources/assets/logicandcomputings/models/block/lamp.json",
+          "src/main/resources/assets/logicandcomputings/models/item/lamp.json",
+          "src/main/java/logicandcomputings/block/entity/LampBlockEntity.java",
+          "src/main/resources/assets/logicandcomputings/items/lamp.json",
+          "src/main/resources/data/logicandcomputings/loot_table/blocks/lamp.json",
+          "src/main/resources/assets/logicandcomputings/blockstates/lamp.json"
+        ]
+      },
+      "path": "~/lamp"
+    },
+    {
+      "name": "LampGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lamp_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/logicandcomputings/network/LampGuiButtonMessage.java",
+          "src/main/java/logicandcomputings/world/inventory/LampGuiMenu.java",
+          "src/main/java/logicandcomputings/client/gui/LampGuiScreen.java"
+        ]
+      },
+      "path": "~/lamp"
+    },
+    {
+      "name": "SetreadingfaceNorth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setreadingface_north",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/logicandcomputings/procedures/SetreadingfaceNorthProcedure.java"
+        ]
+      },
+      "path": "~/lamp"
+    },
+    {
+      "name": "SetreadingfaceEast",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setreadingface_east",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/logicandcomputings/procedures/SetreadingfaceEastProcedure.java"
+        ]
+      },
+      "path": "~/lamp"
+    },
+    {
+      "name": "SetreadingfaceWest",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setreadingface_west",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/logicandcomputings/procedures/SetreadingfaceWestProcedure.java"
+        ]
+      },
+      "path": "~/lamp"
+    },
+    {
+      "name": "SetreadingfaceUp",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setreadingface_up",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/logicandcomputings/procedures/SetreadingfaceUpProcedure.java"
+        ]
+      },
+      "path": "~/lamp"
+    },
+    {
+      "name": "Setreadingfacedown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setreadingfacedown",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/logicandcomputings/procedures/SetreadingfacedownProcedure.java"
+        ]
+      },
+      "path": "~/lamp"
+    },
+    {
+      "name": "Setreadingfacesouth",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setreadingfacesouth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/logicandcomputings/procedures/SetreadingfacesouthProcedure.java"
+        ]
+      },
+      "path": "~/lamp"
+    },
+    {
+      "name": "LampOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lamp_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/logicandcomputings/procedures/LampOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/lamp"
+    },
+    {
+      "name": "Returnbasegatheredsignal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "returnbasegatheredsignal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/logicandcomputings/procedures/ReturnbasegatheredsignalProcedure.java"
+        ]
+      },
+      "path": "~/lamp"
+    },
+    {
+      "name": "ColorRegistry",
+      "type": "code",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "color_registry",
+      "metadata": {
+        "files": [
+          "src/main/java/logicandcomputings/ColorRegistry.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -3119,7 +3402,14 @@
       "gui.logicandcomputings.logic_gates_gui.label_final_signal": "Final Signal",
       "gui.logicandcomputings.logic_gates_gui.label_time": "Tick",
       "gui.logicandcomputings.logic_gates_gui.label_signal": "Signal",
-      "gui.logicandcomputings.logic_gates_gui.label_delay1": "Delay :"
+      "gui.logicandcomputings.logic_gates_gui.label_delay1": "Delay :",
+      "item.logicandcomputings.lamp": "Lamp",
+      "gui.logicandcomputings.lamp_gui.button_d": "D",
+      "gui.logicandcomputings.lamp_gui.button_e": "E",
+      "gui.logicandcomputings.lamp_gui.button_u": "U",
+      "gui.logicandcomputings.lamp_gui.button_s": "S",
+      "gui.logicandcomputings.lamp_gui.button_empty": "N",
+      "gui.logicandcomputings.lamp_gui.button_w": "W"
     }
   },
   "metadata": {
@@ -3225,6 +3515,10 @@
       },
       {
         "name": "MuxSwitch",
+        "children": []
+      },
+      {
+        "name": "lamp",
         "children": []
       }
     ]

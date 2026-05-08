@@ -20,6 +20,7 @@ public class LogicandcomputingsModScreens {
 		event.register(LogicandcomputingsModMenus.GUI_NOT_GATE.get(), GuiNotGateScreen::new);
 		event.register(LogicandcomputingsModMenus.WIRE_GUI.get(), WireGuiScreen::new);
 		event.register(LogicandcomputingsModMenus.LOGIC_GATES_GUI.get(), LogicGatesGuiScreen::new);
+		event.register(LogicandcomputingsModMenus.LAMP_GUI.get(), LampGuiScreen::new);
 	}
 
 	public interface ScreenAccessor {
