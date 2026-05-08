@@ -1,0 +1,9 @@
+{
+  "parent": "logicandcomputings:custom/not",
+  "textures": {
+    "all": "minecraft:block/blast_furnace_top",
+    "particle": "minecraft:block/blast_furnace_top",
+    "0": "logicandcomputings:block/not_texture_not_powered"
+  },
+  "render_type": "translucent"
+}

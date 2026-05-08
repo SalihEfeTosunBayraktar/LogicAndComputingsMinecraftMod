@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "logicandcomputings:blocks/buffer_gate",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "logicandcomputings:buffer_gate"
+        }
+      ]
+    }
+  ]
+}

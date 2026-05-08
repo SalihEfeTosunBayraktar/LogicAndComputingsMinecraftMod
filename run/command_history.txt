@@ -1,0 +1,50 @@
+/setblock 2 -60 -23 minecraft:redstone_block
+/setblock 2 -60 -23 minecraft:air
+/setblock 2 -60 -23 minecraft:redstone_block
+/setblock 2 -60 -23 minecraft:air
+/setblock 2 -60 -23 minecraft:redstone_block
+/setblock 2 -60 -23 minecraft:air
+/setblock 2 -60 -23 minecraft:redstone_block
+/setblock 2 -60 -23 minecraft:air
+/setblock 2 -60 -23 minecraft:redstone_block
+/setblock 2 -60 -23 minecraft:air
+/setblock 2 -60 -23 minecraft:redstone_block
+/setblock 2 -60 -23 minecraft:air
+/setblock 2 -60 -23 minecraft:redstone_block
+/setblock 2 -60 -23 minecraft:air
+/setblock 2 -60 -23 minecraft:redstone_block
+/setblock 2 -60 -23 minecraft:air
+/setblock 2 -60 -23 minecraft:redstone_block
+/setblock 2 -60 -23 minecraft:air
+/setblock 2 -60 -23 minecraft:redstone_block
+/setblock 2 -60 -23 minecraft:air
+/setblock 2 -60 -23 minecraft:redstone_block
+/setblock 2 -60 -23 minecraft:air
+/setblock 2 -60 -23 minecraft:redstone_block
+/setblock 2 -60 -23 minecraft:air
+/setblock 2 -60 -23 minecraft:redstone_block
+/setblock 2 -60 -23 minecraft:air
+/setblock 2 -60 -23 minecraft:redstone_block
+/give Dev minecraft:command_block
+/setblock 3 -60 -5 minecraft:redstone_block
+/setblock 3 -60 -5 minecraft:air
+/setblock 3 -60 -5 minecraft:redstone_block
+/setblock 3 -60 -5 minecraft:air
+/setblock 3 -60 -5 minecraft:redstone_block
+/setblock 3 -60 -5 minecraft:air
+/setblock 3 -60 -5 minecraft:redstone_block
+/setblock 3 -60 -5 minecraft:air
+/setblock 3 -60 -5 minecraft:redstone_block
+/setblock 3 -60 -5 minecraft:air
+/setblock 3 -60 -5 minecraft:redstone_block
+/setblock 3 -60 -5 minecraft:air
+/setblock 3 -60 -5 minecraft:redstone_block
+/setblock 3 -60 -5 minecraft:air
+/give Dev logicandcomputings:and_gate
+/give Dev logicandcomputings:pulsegenerator
+/time set day
+/give Dev logicandcomputings:mux_siwtch
+/time set day
+/weather clear
+/difficulty easy
+/difficulty peaceful

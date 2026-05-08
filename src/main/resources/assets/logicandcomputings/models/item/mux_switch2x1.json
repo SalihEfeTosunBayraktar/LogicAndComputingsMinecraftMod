@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "logicandcomputings:item/2x1mux"
+  },
+  "render_type": "translucent"
+}

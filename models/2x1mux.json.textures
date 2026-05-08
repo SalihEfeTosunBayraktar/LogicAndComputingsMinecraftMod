@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "2x1mux_not_powered"
+      }
+    },
+    "powered": {
+      "name": "powered",
+      "map": {
+        "0": "2x1mux_powered"
+      }
+    }
+  }
+}

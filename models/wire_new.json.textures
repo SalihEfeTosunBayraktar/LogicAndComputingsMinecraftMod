@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "cable_new"
+      }
+    },
+    "powered": {
+      "name": "powered",
+      "map": {
+        "0": "wire_new_powered"
+      }
+    }
+  }
+}

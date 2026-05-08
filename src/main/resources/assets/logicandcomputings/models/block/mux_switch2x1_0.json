@@ -1,0 +1,9 @@
+{
+  "parent": "logicandcomputings:custom/2x1mux",
+  "textures": {
+    "all": "minecraft:block/bamboo_planks",
+    "particle": "minecraft:block/cherry_trapdoor",
+    "0": "logicandcomputings:block/2x1mux_powered"
+  },
+  "render_type": "solid"
+}

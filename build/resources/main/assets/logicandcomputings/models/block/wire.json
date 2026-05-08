@@ -1,0 +1,9 @@
+{
+  "parent": "logicandcomputings:custom/wire_new",
+  "textures": {
+    "all": "logicandcomputings:block/cable_new",
+    "particle": "logicandcomputings:block/cable_new",
+    "0": "logicandcomputings:block/cable_new"
+  },
+  "render_type": "solid"
+}

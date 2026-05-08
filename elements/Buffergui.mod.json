@@ -1,0 +1,598 @@
+{
+  "_fv": 85,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 174,
+    "height": 144,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returndelay",
+          "text": {
+            "fixedValue": "",
+            "name": "Returndelaytime"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 178,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returnoutputsignalvalue",
+          "text": {
+            "fixedValue": "",
+            "name": "Returnoutputsignalvalue"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 180,
+          "y": 137,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returnsignalvalue",
+          "text": {
+            "fixedValue": "",
+            "name": "Returnsignalvalue2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 170,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returndelay1",
+          "text": {
+            "fixedValue": "",
+            "name": "Returndelay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 258,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returnaddervalue",
+          "text": {
+            "fixedValue": "",
+            "name": "Returnaddervalue"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 170,
+          "y": 110,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "addergui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Poweredtrue"
+          },
+          "x": 240,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_minus",
+          "image": "adder_minus.png",
+          "hoveredImage": "adder_minus_hovered.png",
+          "onClick": {
+            "name": "Addervalueminusone"
+          },
+          "x": 159,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_plus",
+          "image": "adder_plus.png",
+          "hoveredImage": "adder_plus_hovered.png",
+          "onClick": {
+            "name": "Addervalueplusone"
+          },
+          "x": 159,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_minus1",
+          "image": "adder_minus.png",
+          "hoveredImage": "adder_minus_hovered.png",
+          "onClick": {
+            "name": "Delayminusone"
+          },
+          "x": 159,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_plus1",
+          "image": "adder_plus.png",
+          "hoveredImage": "adder_plus_hovered.png",
+          "onClick": {
+            "name": "Delayplusone"
+          },
+          "x": 159,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_delay",
+          "text": {
+            "fixedValue": "Delay"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_time",
+          "text": {
+            "fixedValue": "Tick"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_adder",
+          "text": {
+            "fixedValue": "Adder"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_value",
+          "text": {
+            "fixedValue": "Value"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_minus_20",
+          "image": "adder_minus_20.png",
+          "hoveredImage": "adder_minus_20_hovered.png",
+          "onClick": {
+            "name": "Delayminusonesecond"
+          },
+          "x": 168,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_plus_20",
+          "image": "adder_plus_20.png",
+          "hoveredImage": "adder_plus_20_hovered.png",
+          "onClick": {
+            "name": "Delayplusonesecond"
+          },
+          "x": 168,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_plus2",
+          "image": "adder_plus.png",
+          "hoveredImage": "adder_plus_hovered.png",
+          "onClick": {
+            "name": "Outputsignalvalueplusone"
+          },
+          "x": 168,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_minus2",
+          "image": "adder_minus.png",
+          "hoveredImage": "adder_minus_hovered.png",
+          "onClick": {
+            "name": "Outputsignalvalueminusone"
+          },
+          "x": 168,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_output_redstone",
+          "text": {
+            "fixedValue": "Output"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_signal",
+          "text": {
+            "fixedValue": "Signal"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank_switch",
+          "image": "blank_switch.png",
+          "hoveredImage": "blank_switch.png",
+          "onClick": {
+            "name": "Setaddermode"
+          },
+          "x": 114,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "switch_off.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnaddermodefalse"
+          },
+          "x": 114,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "switch_on.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnaddermodetrue"
+          },
+          "x": 114,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lamp_off.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnaddermodefalse"
+          },
+          "x": 114,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lamp_on.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnaddermodetrue"
+          },
+          "x": 114,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_direct_flow",
+          "text": {
+            "fixedValue": "Direct Flow"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blank_switch1",
+          "image": "blank_switch.png",
+          "hoveredImage": "blank_switch.png",
+          "onClick": {
+            "name": "Setrepeatermode"
+          },
+          "x": 114,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "switch_off.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnrepeatermodefalse"
+          },
+          "x": 114,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "switch_on.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnrepeatermodetrue"
+          },
+          "x": 114,
+          "y": 161,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lamp_off.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnrepeatermodefalse"
+          },
+          "x": 114,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lamp_on.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnrepeatermodetrue"
+          },
+          "x": 114,
+          "y": 152,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_repeater",
+          "text": {
+            "fixedValue": "(Repeater)"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 170,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_final_signal",
+          "text": {
+            "fixedValue": "Final Signal"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_value1",
+          "text": {
+            "fixedValue": "Value : "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_delay1",
+          "text": {
+            "fixedValue": "Delay :"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 222,
+          "y": 53,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "adder_not_powered_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Poweredfalse"
+          },
+          "x": 240,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lamp_off.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnadderandrepeatermodetrue"
+          },
+          "x": 114,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "lamp_on.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnadderandrepeatermodefalse"
+          },
+          "x": 114,
+          "y": 134,
+          "locked": false
+        }
+      }
+    ],
+    "onTick": {
+      "name": "BufferguiWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

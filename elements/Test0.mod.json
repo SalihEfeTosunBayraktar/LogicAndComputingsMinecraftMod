@@ -1,0 +1,289 @@
+{
+  "_fv": 85,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 95,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returnsignalvalue",
+          "text": {
+            "fixedValue": "",
+            "name": "Returnsignalvalue"
+          },
+          "color": {
+            "value": -205,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 144,
+          "y": 84,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_selectfacenorth0",
+          "image": "selectfacenorth0.png",
+          "hoveredImage": "selectfacenorthh.png",
+          "onClick": {
+            "name": "Setconnectionstatus0"
+          },
+          "x": 159,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "faceconnectedtrue.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnconnectionstatus0"
+          },
+          "x": 158,
+          "y": 124,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_selectfacesouth0",
+          "image": "selectfacesouth0.png",
+          "hoveredImage": "selectfacesouthh.png",
+          "onClick": {
+            "name": "Setconnectionstatus1"
+          },
+          "x": 177,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "faceconnectedtrue.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnconnectionstatus1"
+          },
+          "x": 176,
+          "y": 124,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_selectfacewest0",
+          "image": "selectfacewest0.png",
+          "hoveredImage": "selectfacewesth.png",
+          "onClick": {
+            "name": "Setconnectionstatus2"
+          },
+          "x": 195,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "faceconnectedtrue.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnconnectionstatus2"
+          },
+          "x": 194,
+          "y": 124,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_selectfaceeast0",
+          "image": "selectfaceeast0.png",
+          "hoveredImage": "selectfaceeasth.png",
+          "onClick": {
+            "name": "Setconnectionstatus3"
+          },
+          "x": 213,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "faceconnectedtrue.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnconnectionstatus3"
+          },
+          "x": 212,
+          "y": 124,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_selectfaceup0",
+          "image": "selectfaceup0.png",
+          "hoveredImage": "selectfaceuph.png",
+          "onClick": {
+            "name": "Setconnectionstatus4"
+          },
+          "x": 231,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_selectfacedown0",
+          "image": "selectfacedown0.png",
+          "hoveredImage": "selectfacedownh.png",
+          "onClick": {
+            "name": "Setconnectionstatus5"
+          },
+          "x": 249,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "faceconnectedtrue.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnconnectionstatus4"
+          },
+          "x": 230,
+          "y": 124,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "faceconnectedtrue.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnconnectionstatus5"
+          },
+          "x": 248,
+          "y": 124,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bg.png",
+          "use1Xscale": true,
+          "x": 141,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "redstone_not_emiting.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnredstoneemitsinfotrue"
+          },
+          "x": 267,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "redstone_dust_je2_be2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Returnredstoneemitsinfofalse"
+          },
+          "x": 267,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_blankredstone",
+          "image": "blankredstone.png",
+          "hoveredImage": "blankredstone.png",
+          "onClick": {
+            "name": "Emitsredstone"
+          },
+          "x": 267,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_redstone_power",
+          "text": {
+            "fixedValue": "Redstone Dust Power"
+          },
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 168,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_reading",
+          "text": {
+            "fixedValue": "Reading"
+          },
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 231,
+          "y": 152,
+          "locked": false
+        }
+      }
+    ],
+    "onTick": {
+      "name": "Test0WhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

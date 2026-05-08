@@ -1,0 +1,67 @@
+{
+  "model": {
+    "type": "logicandcomputings:legacy_overrides",
+    "overrides": [
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "logicandcomputings:cableconnector/mode"
+            },
+            "value": 1
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "logicandcomputings:item/cableconnector_0"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "logicandcomputings:cableconnector/mode"
+            },
+            "value": 2
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "logicandcomputings:item/cableconnector_1"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "logicandcomputings:cableconnector/mode"
+            },
+            "value": 3
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "logicandcomputings:item/cableconnector_2"
+        }
+      },
+      {
+        "predicate": [
+          {
+            "property": {
+              "property": "logicandcomputings:cableconnector/mode"
+            },
+            "value": 4
+          }
+        ],
+        "model": {
+          "type": "minecraft:model",
+          "model": "logicandcomputings:item/cableconnector_3"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "logicandcomputings:item/cableconnector"
+    }
+  }
+}

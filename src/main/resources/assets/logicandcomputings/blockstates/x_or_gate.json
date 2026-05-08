@@ -1,0 +1,50 @@
+{
+  "variants": {
+    "facing=north,powered=true": {
+      "model": "logicandcomputings:block/x_or_gate_0"
+    },
+    "facing=north,powered=false": {
+      "model": "logicandcomputings:block/x_or_gate"
+    },
+    "facing=east,powered=true": {
+      "model": "logicandcomputings:block/x_or_gate_0",
+      "y": 90
+    },
+    "facing=east,powered=false": {
+      "model": "logicandcomputings:block/x_or_gate",
+      "y": 90
+    },
+    "facing=south,powered=true": {
+      "model": "logicandcomputings:block/x_or_gate_0",
+      "y": 180
+    },
+    "facing=south,powered=false": {
+      "model": "logicandcomputings:block/x_or_gate",
+      "y": 180
+    },
+    "facing=west,powered=true": {
+      "model": "logicandcomputings:block/x_or_gate_0",
+      "y": 270
+    },
+    "facing=west,powered=false": {
+      "model": "logicandcomputings:block/x_or_gate",
+      "y": 270
+    },
+    "facing=up,powered=true": {
+      "model": "logicandcomputings:block/x_or_gate_0",
+      "x": 270
+    },
+    "facing=up,powered=false": {
+      "model": "logicandcomputings:block/x_or_gate",
+      "x": 270
+    },
+    "facing=down,powered=true": {
+      "model": "logicandcomputings:block/x_or_gate_0",
+      "x": 90
+    },
+    "facing=down,powered=false": {
+      "model": "logicandcomputings:block/x_or_gate",
+      "x": 90
+    }
+  }
+}

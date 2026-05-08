@@ -1,0 +1,36 @@
+{
+  "multipart": [
+    {
+      "when": { "has_signal": "false" },
+      "apply": { "model": "logicandcomputings:block/wire" }
+    },
+    {
+      "when": { "has_signal": "true" },
+      "apply": { "model": "logicandcomputings:block/wire_0" }
+    },
+    {
+      "when": { "north": "true" },
+      "apply": { "model": "logicandcomputings:block/cableconnection" }
+    },
+    {
+      "when": { "east": "true" },
+      "apply": { "model": "logicandcomputings:block/cableconnection", "y": 90 }
+    },
+    {
+      "when": { "south": "true" },
+      "apply": { "model": "logicandcomputings:block/cableconnection", "y": 180 }
+    },
+    {
+      "when": { "west": "true" },
+      "apply": { "model": "logicandcomputings:block/cableconnection", "y": 270 }
+    },
+    {
+      "when": { "up": "true" },
+      "apply": { "model": "logicandcomputings:block/cableconnection", "x": 270 }
+    },
+    {
+      "when": { "down": "true" },
+      "apply": { "model": "logicandcomputings:block/cableconnection", "x": 90 }
+    }
+  ]
+}

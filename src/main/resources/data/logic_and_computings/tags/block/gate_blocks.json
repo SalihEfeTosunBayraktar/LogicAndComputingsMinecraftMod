@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "logicandcomputings:buffer_gate",
+    "logicandcomputings:x_or_gate",
+    "logicandcomputings:n_or_gate",
+    "logicandcomputings:mux_switch2x1",
+    "logicandcomputings:and_gate",
+    "logicandcomputings:or_gate",
+    "logicandcomputings:xn_or_gate",
+    "logicandcomputings:nand_gate",
+    "logicandcomputings:not_gate"
+  ]
+}

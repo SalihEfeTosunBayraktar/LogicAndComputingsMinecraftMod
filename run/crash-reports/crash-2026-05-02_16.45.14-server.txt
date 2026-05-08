@@ -1,0 +1,172 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 2026-05-02 16:45:14
+Description: Ticking entity
+
+net.minecraft.ResourceLocationException: Non [a-z0-9/._-] character in path of location: minecraft:logic_and_computings  gate_blocks
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:275) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:51) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:75) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:47) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/logicandcomputings@1.0.0/logicandcomputings.procedures.BufferOnTickUpdateProcedure.execute(BufferOnTickUpdateProcedure.java:48) ~[%23214!/:?] {re:classloading}
+	at TRANSFORMER/logicandcomputings@1.0.0/logicandcomputings.procedures.BufferOnTickUpdateProcedure.onEntityTick(BufferOnTickUpdateProcedure.java:32) ~[%23214!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.SubscribeEventListener.invoke(SubscribeEventListener.java:50) ~[bus-8.0.5.jar%23171!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar%23171!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar%23171!/:?] {}
+	at TRANSFORMER/neoforge@21.8.31/net.neoforged.neoforge.event.EventHooks.fireEntityTickPre(EventHooks.java:940) ~[neoforge-21.8.31.jar%23213!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:777) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.Level.guardEntityTick(Level.java:588) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ServerLevel.lambda$tick$2(ServerLevel.java:414) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:394) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1083) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:956) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:108) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:716) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:277) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.resources.ResourceLocation.assertValidPath(ResourceLocation.java:275) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.resources.ResourceLocation.withDefaultNamespace(ResourceLocation.java:51) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.resources.ResourceLocation.bySeparator(ResourceLocation.java:75) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.resources.ResourceLocation.parse(ResourceLocation.java:47) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/logicandcomputings@1.0.0/logicandcomputings.procedures.BufferOnTickUpdateProcedure.execute(BufferOnTickUpdateProcedure.java:48) ~[%23214!/:?] {re:classloading}
+	at TRANSFORMER/logicandcomputings@1.0.0/logicandcomputings.procedures.BufferOnTickUpdateProcedure.onEntityTick(BufferOnTickUpdateProcedure.java:32) ~[%23214!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.SubscribeEventListener.invoke(SubscribeEventListener.java:50) ~[bus-8.0.5.jar%23171!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:360) ~[bus-8.0.5.jar%23171!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:328) ~[bus-8.0.5.jar%23171!/:?] {}
+	at TRANSFORMER/neoforge@21.8.31/net.neoforged.neoforge.event.EventHooks.fireEntityTickPre(EventHooks.java:940) ~[neoforge-21.8.31.jar%23213!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:777) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.Level.guardEntityTick(Level.java:588) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ServerLevel.lambda$tick$2(ServerLevel.java:414) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading}
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:player (net.minecraft.server.level.ServerPlayer)
+	Entity ID: 1
+	Entity Name: Dev
+	Entity's Exact location: -5.50, -60.00, 10.50
+	Entity's Block location: World: (-6,-60,10), Section: (at 10,4,10 in -1,-4,0; chunk contains blocks -16,-64,0 to -1,319,15), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.Level.guardEntityTick(Level.java:588) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ServerLevel.lambda$tick$2(ServerLevel.java:414) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:394) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1083) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:956) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:108) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:716) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:277) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+-- Affected level --
+Details:
+	All players: 1 total; ServerPlayer{name=Dev, id=1, pos=(-5.5, -60.0, 10.5), mode=CREATIVE, permission=4}
+	Chunk stats: 841
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (0,-60,0), Section: (at 0,4,0 in 0,-4,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Level time: 12 game time, 12 day time
+	Level name: New World
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Commands: true
+	Level weather: Rain time: 152832 (now: false), thunder time: 17552 (now: false)
+	Known server brands: neoforge
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Loaded entity count: 1
+Stacktrace:
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.level.ServerLevel.fillReportDetails(ServerLevel.java:1787) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1086) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:956) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:108) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:716) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.8/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:277) ~[neoforge-21.8.31.jar%23212!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.8
+	Minecraft Version ID: 1.21.8
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.10, JetBrains s.r.o.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), JetBrains s.r.o.
+	Memory: 55039032 bytes (52 MiB) / 583008256 bytes (556 MiB) up to 8405385216 bytes (8016 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+	Identifier: AuthenticAMD Family 25 Model 117 Stepping 2
+	Microarchitecture: Zen 3
+	Frequency (GHz): 3.79
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: AMD Radeon(TM) Graphics
+	Graphics card #0 vendor: Advanced Micro Devices, Inc.
+	Graphics card #0 VRAM (MiB): 512.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.23033.1002
+	Graphics card #1 name: NVIDIA GeForce RTX 4070 Laptop GPU
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 8188.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.15.9621
+	Memory slot #0 capacity (MiB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 5.60
+	Memory slot #0 type: DDR5
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 5.60
+	Memory slot #1 type: DDR5
+	Virtual memory max (MiB): 35390.86
+	Virtual memory used (MiB): 17642.62
+	Swap memory total (MiB): 3328.00
+	Swap memory used (MiB): 62.21
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 210120.80, total: 975684.00
+	Space in storage for workdir (MiB): available: 552139.69, total: 976760.00
+	JVM Flags: 0 total; 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/1, l='ServerLevel[New World]', x=-5.50, y=-60.00, z=10.50]]
+	Active Data Packs: vanilla, mod_data, mod/neoforge, mod/logicandcomputings
+	Available Data Packs: minecart_improvements, redstone_experiments, trade_rebalance, vanilla, mod/logicandcomputings, mod/neoforge, mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -5174897231127607253
+	Suppressed Exceptions: ~~NONE~~
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Launched Version: 21.8.31
+	ModLauncher: 9.0
+	ModLauncher launch target: neoforgeclientdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-9.0.16.jar neoforgedevdistcleaner PLUGINSERVICE 
+		loader-9.0.16.jar slf4jfixer PLUGINSERVICE 
+		loader-9.0.16.jar runtime_enum_extender PLUGINSERVICE 
+		loader-9.0.16.jar accesstransformer PLUGINSERVICE 
+		loader-9.0.16.jar mixin TRANSFORMATIONSERVICE 
+		loader-9.0.16.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@9.0
+		minecraft@9.0
+	Mod List: 
+		main                                              |LogicAndComputings            |logicandcomputings            |1.0.0               |Manifest: NOSIGNATURE
+		neoforge-21.8.31.jar                              |Minecraft                     |minecraft                     |1.21.8              |Manifest: NOSIGNATURE
+		neoforge-21.8.31.jar                              |NeoForge                      |neoforge                      |21.8.31             |Manifest: NOSIGNATURE
+	Crash Report UUID: 6f1be842-aa98-45c0-bd7d-c8894e76c3d0
+	FML: 9.0.16
+	NeoForge: 21.8.31

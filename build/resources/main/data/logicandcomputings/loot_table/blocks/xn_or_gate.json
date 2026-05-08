@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "logicandcomputings:blocks/xn_or_gate",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "logicandcomputings:xn_or_gate"
+        }
+      ]
+    }
+  ]
+}

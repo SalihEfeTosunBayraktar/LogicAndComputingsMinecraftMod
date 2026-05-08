@@ -1,0 +1,9 @@
+{
+  "parent": "logicandcomputings:custom/cableconnection",
+  "textures": {
+    "all": "logicandcomputings:block/cableconnection",
+    "particle": "logicandcomputings:block/cableconnection",
+    "0": "logicandcomputings:block/cableconnection"
+  },
+  "render_type": "solid"
+}

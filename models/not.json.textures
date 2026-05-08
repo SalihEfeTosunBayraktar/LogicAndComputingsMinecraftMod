@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "not_texture_not_powered"
+      }
+    },
+    "not_powered": {
+      "name": "not_powered",
+      "map": {
+        "0": "not_texture_powered"
+      }
+    }
+  }
+}

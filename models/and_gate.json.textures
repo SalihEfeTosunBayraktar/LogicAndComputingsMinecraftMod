@@ -1,0 +1,76 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "and_gate_not_powered"
+      }
+    },
+    "and_gate_powered": {
+      "name": "and_gate_powered",
+      "map": {
+        "0": "and_gate_powered"
+      }
+    },
+    "or_gate_not_powered": {
+      "name": "or_gate_not_powered",
+      "map": {
+        "0": "or_gate_not_powered"
+      }
+    },
+    "or_gate_powered": {
+      "name": "or_gate_powered",
+      "map": {
+        "0": "or_gate_powered"
+      }
+    },
+    "nand_not_powered": {
+      "name": "nand_not_powered",
+      "map": {
+        "0": "nand_gate_not_powered"
+      }
+    },
+    "nand_powered": {
+      "name": "nand_powered",
+      "map": {
+        "0": "nand_gate_powered"
+      }
+    },
+    "nor_not_powered": {
+      "name": "nor_not_powered",
+      "map": {
+        "0": "nor_gate_not_powered"
+      }
+    },
+    "nor_gate_powered": {
+      "name": "nor_gate_powered",
+      "map": {
+        "0": "nor_gate_powered"
+      }
+    },
+    "xor_gate_powered": {
+      "name": "xor_gate_powered",
+      "map": {
+        "0": "xor_gate_powered"
+      }
+    },
+    "xor_gate_not_powered": {
+      "name": "xor_gate_not_powered",
+      "map": {
+        "0": "xor_gate_not_powered"
+      }
+    },
+    "xnor_powered": {
+      "name": "xnor_powered",
+      "map": {
+        "0": "xnor_gate_powered"
+      }
+    },
+    "xnor_not_powered": {
+      "name": "xnor_not_powered",
+      "map": {
+        "0": "xnor_gate_not_powered"
+      }
+    }
+  }
+}

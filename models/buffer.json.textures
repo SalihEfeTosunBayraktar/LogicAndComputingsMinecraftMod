@@ -1,0 +1,16 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "buffer_texture_not_powered"
+      }
+    },
+    "buffer_powered": {
+      "name": "buffer_powered",
+      "map": {
+        "0": "buffer_texture_powered"
+      }
+    }
+  }
+}

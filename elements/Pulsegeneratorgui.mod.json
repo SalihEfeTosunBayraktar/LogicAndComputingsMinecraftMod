@@ -1,0 +1,307 @@
+{
+  "_fv": 85,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_5",
+          "text": "-5",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Maxdelayminusone"
+          },
+          "width": 9,
+          "height": 20,
+          "x": 132,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_51",
+          "text": "+5",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Maxdelayplusone"
+          },
+          "width": 9,
+          "height": 20,
+          "x": 141,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_return_max_delayinfo",
+          "text": {
+            "fixedValue": "",
+            "name": "ReturnMaxDelayinfo"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 150,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returntimerinfo",
+          "text": {
+            "fixedValue": "",
+            "name": "Returntimerinfo"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 150,
+          "y": 71,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returnduration",
+          "text": {
+            "fixedValue": "",
+            "name": "Returnduration"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 150,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_52",
+          "text": "+5",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Durationplusone"
+          },
+          "width": 9,
+          "height": 20,
+          "x": 141,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_53",
+          "text": "-5",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Durationminusone"
+          },
+          "width": 9,
+          "height": 20,
+          "x": 132,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returnoutputsignalvalue",
+          "text": {
+            "fixedValue": "",
+            "name": "Returnoutputsignalvalue"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 150,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty",
+          "text": "+1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Outputsignalvalueplusone"
+          },
+          "width": 9,
+          "height": 20,
+          "x": 141,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_1",
+          "text": "-1",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Outputsignalvalueminusone"
+          },
+          "width": 9,
+          "height": 20,
+          "x": 132,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returnpausedisplay",
+          "text": {
+            "fixedValue": "",
+            "name": "Returnpausedisplay"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 188,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_empty1",
+          "text": "",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Pausetoggle"
+          },
+          "width": 9,
+          "height": 20,
+          "x": 231,
+          "y": 179,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock.png",
+          "use1Xscale": false,
+          "x": 177,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returnmaxdelayhalfinfo",
+          "text": {
+            "fixedValue": "",
+            "name": "Returnmaxdelayhalfinfo"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 168,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returnmaxdelayhalfinfo1",
+          "text": {
+            "fixedValue": "",
+            "name": "Returnmaxdelayhalfinfo"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 231,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returndurationinfo",
+          "text": {
+            "fixedValue": "",
+            "name": "Returndurationinfo"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 195,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_r",
+          "text": "R",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Resetpulsegenerator"
+          },
+          "width": 30,
+          "height": 20,
+          "x": 267,
+          "y": 179,
+          "locked": false
+        }
+      }
+    ],
+    "onTick": {
+      "name": "PulsegeneratorguiWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

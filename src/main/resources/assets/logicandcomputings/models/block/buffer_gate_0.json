@@ -1,0 +1,9 @@
+{
+  "parent": "logicandcomputings:custom/buffer",
+  "textures": {
+    "all": "logicandcomputings:block/buffer_texture_powered",
+    "particle": "minecraft:block/blast_furnace_top",
+    "0": "logicandcomputings:block/buffer_texture_powered"
+  },
+  "render_type": "translucent"
+}

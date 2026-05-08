@@ -1,0 +1,50 @@
+{
+  "variants": {
+    "facing=north,powered=true": {
+      "model": "logicandcomputings:block/pulsegenerator_0"
+    },
+    "facing=north,powered=false": {
+      "model": "logicandcomputings:block/pulsegenerator"
+    },
+    "facing=east,powered=true": {
+      "model": "logicandcomputings:block/pulsegenerator_0",
+      "y": 90
+    },
+    "facing=east,powered=false": {
+      "model": "logicandcomputings:block/pulsegenerator",
+      "y": 90
+    },
+    "facing=south,powered=true": {
+      "model": "logicandcomputings:block/pulsegenerator_0",
+      "y": 180
+    },
+    "facing=south,powered=false": {
+      "model": "logicandcomputings:block/pulsegenerator",
+      "y": 180
+    },
+    "facing=west,powered=true": {
+      "model": "logicandcomputings:block/pulsegenerator_0",
+      "y": 270
+    },
+    "facing=west,powered=false": {
+      "model": "logicandcomputings:block/pulsegenerator",
+      "y": 270
+    },
+    "facing=up,powered=true": {
+      "model": "logicandcomputings:block/pulsegenerator_0",
+      "x": 270
+    },
+    "facing=up,powered=false": {
+      "model": "logicandcomputings:block/pulsegenerator",
+      "x": 270
+    },
+    "facing=down,powered=true": {
+      "model": "logicandcomputings:block/pulsegenerator_0",
+      "x": 90
+    },
+    "facing=down,powered=false": {
+      "model": "logicandcomputings:block/pulsegenerator",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "logicandcomputings:custom/and_gate",
+  "textures": {
+    "all": "minecraft:block/anvil",
+    "particle": "minecraft:block/anvil",
+    "0": "logicandcomputings:block/nor_gate_powered"
+  },
+  "render_type": "cutout_mipped"
+}

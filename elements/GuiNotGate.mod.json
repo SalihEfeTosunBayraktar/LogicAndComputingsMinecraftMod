@@ -1,0 +1,326 @@
+{
+  "_fv": 85,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 174,
+    "height": 97,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returndelay",
+          "text": {
+            "fixedValue": "",
+            "name": "Returndelaytime"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 180,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returnoutputsignalvalue",
+          "text": {
+            "fixedValue": "",
+            "name": "Returnoutputsignalvalue"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 180,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returnsignalvalue",
+          "text": {
+            "fixedValue": "",
+            "name": "Returnsignalvalue2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 170,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returndelay1",
+          "text": {
+            "fixedValue": "",
+            "name": "Returndelay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 260,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_minus1",
+          "image": "adder_minus.png",
+          "hoveredImage": "adder_minus_hovered.png",
+          "onClick": {
+            "name": "Delayminusone"
+          },
+          "x": 159,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_plus1",
+          "image": "adder_plus.png",
+          "hoveredImage": "adder_plus_hovered.png",
+          "onClick": {
+            "name": "Delayplusone"
+          },
+          "x": 159,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_delay",
+          "text": {
+            "fixedValue": "Delay"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_time",
+          "text": {
+            "fixedValue": "Tick"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_minus_20",
+          "image": "adder_minus_20.png",
+          "hoveredImage": "adder_minus_20_hovered.png",
+          "onClick": {
+            "name": "Delayminusonesecond"
+          },
+          "x": 168,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_plus_20",
+          "image": "adder_plus_20.png",
+          "hoveredImage": "adder_plus_20_hovered.png",
+          "onClick": {
+            "name": "Delayplusonesecond"
+          },
+          "x": 168,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_plus2",
+          "image": "adder_plus.png",
+          "hoveredImage": "adder_plus_hovered.png",
+          "onClick": {
+            "name": "Outputsignalvalueplusone"
+          },
+          "x": 168,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_minus2",
+          "image": "adder_minus.png",
+          "hoveredImage": "adder_minus_hovered.png",
+          "onClick": {
+            "name": "Outputsignalvalueminusone"
+          },
+          "x": 168,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_output_redstone",
+          "text": {
+            "fixedValue": "Output"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 134,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_signal",
+          "text": {
+            "fixedValue": "Signal"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 143,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_final_signal",
+          "text": {
+            "fixedValue": "Final Signal"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_value1",
+          "text": {
+            "fixedValue": "Value : "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_delay1",
+          "text": {
+            "fixedValue": "Delay :"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 222,
+          "y": 80,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "addergui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Poweredfalse"
+          },
+          "x": 240,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "adder_not_powered_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Poweredtrue"
+          },
+          "x": 240,
+          "y": 107,
+          "locked": false
+        }
+      }
+    ],
+    "onTick": {
+      "name": "BufferguiWhileThisGUIIsOpenTick"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

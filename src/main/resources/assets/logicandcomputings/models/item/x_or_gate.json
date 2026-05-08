@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "logicandcomputings:item/xor_gate"
+  },
+  "render_type": "translucent"
+}

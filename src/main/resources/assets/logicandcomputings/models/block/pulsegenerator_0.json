@@ -1,0 +1,9 @@
+{
+  "parent": "logicandcomputings:custom/pulse_generator",
+  "textures": {
+    "all": "minecraft:block/amethyst_block",
+    "particle": "logicandcomputings:block/pulsegeneratorpowered",
+    "0": "logicandcomputings:block/pulsegeneratorpowered"
+  },
+  "render_type": "cutout_mipped"
+}
