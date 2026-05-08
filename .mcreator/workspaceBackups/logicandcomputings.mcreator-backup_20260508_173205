@@ -3009,6 +3009,21 @@
         ]
       },
       "path": "~/wire_proc"
+    },
+    {
+      "name": "LogicGatesGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logic_gates_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/logicandcomputings/client/gui/LogicGatesGuiScreen.java",
+          "src/main/java/logicandcomputings/network/LogicGatesGuiButtonMessage.java",
+          "src/main/java/logicandcomputings/world/inventory/LogicGatesGuiMenu.java"
+        ]
+      },
+      "path": "~/Buffer_proc"
     }
   ],
   "variable_elements": [],
@@ -3097,7 +3112,14 @@
       "gui.logicandcomputings.gui_not_gate.label_output_redstone": "Output",
       "gui.logicandcomputings.gui_not_gate.label_signal": "Signal",
       "gui.logicandcomputings.wire_gui.label_reading": "Reading",
-      "gui.logicandcomputings.wire_gui.label_redstone_power": "Redstone Dust Power"
+      "gui.logicandcomputings.wire_gui.label_redstone_power": "Redstone Dust Power",
+      "gui.logicandcomputings.logic_gates_gui.label_delay": "Delay",
+      "gui.logicandcomputings.logic_gates_gui.label_value1": "Value : ",
+      "gui.logicandcomputings.logic_gates_gui.label_output_redstone": "Output",
+      "gui.logicandcomputings.logic_gates_gui.label_final_signal": "Final Signal",
+      "gui.logicandcomputings.logic_gates_gui.label_time": "Tick",
+      "gui.logicandcomputings.logic_gates_gui.label_signal": "Signal",
+      "gui.logicandcomputings.logic_gates_gui.label_delay1": "Delay :"
     }
   },
   "metadata": {
@@ -3211,9 +3233,8 @@
     "modid": "logicandcomputings",
     "modName": "LogicAndComputings",
     "version": "1.0.0",
-    "author": "MCreator",
-    "websiteURL": "https://mcreator.net",
-    "license": "Not specified",
+    "author": "Legendnoobe",
+    "license": "GNU General Public License version 3 (GPLv3)",
     "serverSideOnly": false,
     "requiredMods": [],
     "dependencies": [],
