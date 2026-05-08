@@ -18,7 +18,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import logicandcomputings.world.inventory.GuiNotGateMenu;
+import logicandcomputings.world.inventory.LogicGatesGuiMenu;
 
 import logicandcomputings.init.LogicandcomputingsModBlockEntities;
 
@@ -80,7 +80,7 @@ public class AndGateBlockEntity extends RandomizableContainerBlockEntity impleme
 
 	@Override
 	public AbstractContainerMenu createMenu(int id, Inventory inventory) {
-		return new GuiNotGateMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
+		return new LogicGatesGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(this.worldPosition));
 	}
 
 	@Override

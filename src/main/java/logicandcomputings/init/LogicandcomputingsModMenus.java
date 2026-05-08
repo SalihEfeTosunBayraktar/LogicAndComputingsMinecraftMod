@@ -16,11 +16,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.client.Minecraft;
 
-import logicandcomputings.world.inventory.WireGuiMenu;
-import logicandcomputings.world.inventory.Test0Menu;
-import logicandcomputings.world.inventory.PulsegeneratorguiMenu;
-import logicandcomputings.world.inventory.GuiNotGateMenu;
-import logicandcomputings.world.inventory.BufferguiMenu;
+import logicandcomputings.world.inventory.*;
 
 import logicandcomputings.network.MenuStateUpdateMessage;
 
@@ -35,6 +31,7 @@ public class LogicandcomputingsModMenus {
 	public static final DeferredHolder<MenuType<?>, MenuType<PulsegeneratorguiMenu>> PULSEGENERATORGUI = REGISTRY.register("pulsegeneratorgui", () -> IMenuTypeExtension.create(PulsegeneratorguiMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<GuiNotGateMenu>> GUI_NOT_GATE = REGISTRY.register("gui_not_gate", () -> IMenuTypeExtension.create(GuiNotGateMenu::new));
 	public static final DeferredHolder<MenuType<?>, MenuType<WireGuiMenu>> WIRE_GUI = REGISTRY.register("wire_gui", () -> IMenuTypeExtension.create(WireGuiMenu::new));
+	public static final DeferredHolder<MenuType<?>, MenuType<LogicGatesGuiMenu>> LOGIC_GATES_GUI = REGISTRY.register("logic_gates_gui", () -> IMenuTypeExtension.create(LogicGatesGuiMenu::new));
 
 	public interface MenuAccessor {
 		Map<String, Object> getMenuState();

@@ -165,7 +165,7 @@
       "fixedValue": 7.0
     },
     "hasInventory": true,
-    "guiBoundTo": "GuiNotGate",
+    "guiBoundTo": "LogicGatesGui",
     "openGUIOnRightClick": true,
     "inventorySize": 0,
     "inventoryStackSize": 99,

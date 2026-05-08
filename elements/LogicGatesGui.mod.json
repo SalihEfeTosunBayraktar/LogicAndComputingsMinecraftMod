@@ -1,0 +1,180 @@
+{
+  "_fv": 85,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 174,
+    "height": 97,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returnoutputsignalvalue",
+          "text": {
+            "fixedValue": "",
+            "name": "Returnoutputsignalvalue"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 177,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_returnsignalvalue",
+          "text": {
+            "fixedValue": "",
+            "name": "Returnsignalvalue2"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 168,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_plus2",
+          "image": "adder_plus.png",
+          "hoveredImage": "adder_plus_hovered.png",
+          "onClick": {
+            "name": "Outputsignalvalueplusone"
+          },
+          "x": 168,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_adder_minus2",
+          "image": "adder_minus.png",
+          "hoveredImage": "adder_minus_hovered.png",
+          "onClick": {
+            "name": "Outputsignalvalueminusone"
+          },
+          "x": 168,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_output_redstone",
+          "text": {
+            "fixedValue": "Output"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 116,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_signal",
+          "text": {
+            "fixedValue": "Signal"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 125,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_final_signal",
+          "text": {
+            "fixedValue": "Final Signal"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 89,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_value1",
+          "text": {
+            "fixedValue": "Value : "
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 132,
+          "y": 98,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "addergui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Poweredtrue"
+          },
+          "x": 240,
+          "y": 107,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "adder_not_powered_gui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Poweredfalse"
+          },
+          "x": 240,
+          "y": 107,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

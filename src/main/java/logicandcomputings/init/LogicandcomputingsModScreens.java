@@ -8,11 +8,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
-import logicandcomputings.client.gui.WireGuiScreen;
-import logicandcomputings.client.gui.Test0Screen;
-import logicandcomputings.client.gui.PulsegeneratorguiScreen;
-import logicandcomputings.client.gui.GuiNotGateScreen;
-import logicandcomputings.client.gui.BufferguiScreen;
+import logicandcomputings.client.gui.*;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class LogicandcomputingsModScreens {
@@ -23,6 +19,7 @@ public class LogicandcomputingsModScreens {
 		event.register(LogicandcomputingsModMenus.PULSEGENERATORGUI.get(), PulsegeneratorguiScreen::new);
 		event.register(LogicandcomputingsModMenus.GUI_NOT_GATE.get(), GuiNotGateScreen::new);
 		event.register(LogicandcomputingsModMenus.WIRE_GUI.get(), WireGuiScreen::new);
+		event.register(LogicandcomputingsModMenus.LOGIC_GATES_GUI.get(), LogicGatesGuiScreen::new);
 	}
 
 	public interface ScreenAccessor {

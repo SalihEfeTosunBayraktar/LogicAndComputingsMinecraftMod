@@ -31,7 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import logicandcomputings.world.inventory.GuiNotGateMenu;
+import logicandcomputings.world.inventory.LogicGatesGuiMenu;
 
 import logicandcomputings.procedures.BufferBlockAddedProcedure;
 import logicandcomputings.procedures.AndGateSignalProductProcedure;
@@ -104,7 +104,7 @@ public class AndGateBlock extends Block implements EntityBlock {
 
 				@Override
 				public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-					return new GuiNotGateMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
+					return new LogicGatesGuiMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(pos));
 				}
 			}, pos);
 		}

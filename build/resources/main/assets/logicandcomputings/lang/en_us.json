@@ -64,5 +64,12 @@
   "gui.logicandcomputings.gui_not_gate.label_output_redstone": "Output",
   "gui.logicandcomputings.gui_not_gate.label_signal": "Signal",
   "gui.logicandcomputings.wire_gui.label_reading": "Reading",
-  "gui.logicandcomputings.wire_gui.label_redstone_power": "Redstone Dust Power"
+  "gui.logicandcomputings.wire_gui.label_redstone_power": "Redstone Dust Power",
+  "gui.logicandcomputings.logic_gates_gui.label_delay": "Delay",
+  "gui.logicandcomputings.logic_gates_gui.label_value1": "Value : ",
+  "gui.logicandcomputings.logic_gates_gui.label_output_redstone": "Output",
+  "gui.logicandcomputings.logic_gates_gui.label_final_signal": "Final Signal",
+  "gui.logicandcomputings.logic_gates_gui.label_time": "Tick",
+  "gui.logicandcomputings.logic_gates_gui.label_signal": "Signal",
+  "gui.logicandcomputings.logic_gates_gui.label_delay1": "Delay :"
 }
