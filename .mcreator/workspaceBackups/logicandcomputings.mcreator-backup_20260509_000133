@@ -3277,33 +3277,21 @@
       "path": "~/lamp"
     },
     {
-      "name": "ReturnGatheredsignal",
+      "name": "Returnbasegatheredsignal",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "return_gatheredsignal",
+      "registry_name": "returnbasegatheredsignal",
       "metadata": {
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "blockstate",
+            "type": "blockstate"
           }
         ],
-        "return_type": "string",
+        "return_type": "number",
         "files": [
-          "src/main/java/logicandcomputings/procedures/ReturnGatheredsignalProcedure.java"
+          "src/main/java/logicandcomputings/procedures/ReturnbasegatheredsignalProcedure.java"
         ]
       },
       "path": "~/lamp"

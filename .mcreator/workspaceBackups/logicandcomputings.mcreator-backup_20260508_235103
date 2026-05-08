@@ -3029,7 +3029,7 @@
       "name": "Lamp",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "lamp",
       "metadata": {
         "files": [
@@ -3277,38 +3277,6 @@
       "path": "~/lamp"
     },
     {
-      "name": "ReturnGatheredsignal",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "return_gatheredsignal",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "return_type": "string",
-        "files": [
-          "src/main/java/logicandcomputings/procedures/ReturnGatheredsignalProcedure.java"
-        ]
-      },
-      "path": "~/lamp"
-    },
-    {
       "name": "Returnbasegatheredsignal",
       "type": "procedure",
       "compiles": true,
@@ -3317,20 +3285,8 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
+            "name": "blockstate",
+            "type": "blockstate"
           }
         ],
         "return_type": "number",
@@ -3339,6 +3295,18 @@
         ]
       },
       "path": "~/lamp"
+    },
+    {
+      "name": "ColorRegistry",
+      "type": "code",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "color_registry",
+      "metadata": {
+        "files": [
+          "src/main/java/logicandcomputings/ColorRegistry.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],

@@ -1,6 +1,51 @@
 {
   "variants": {
-    "": {
+    "gathered_signal=0": {
+      "model": "logicandcomputings:block/lamp_0"
+    },
+    "gathered_signal=1": {
+      "model": "logicandcomputings:block/lamp_1"
+    },
+    "gathered_signal=15": {
+      "model": "logicandcomputings:block/lamp_2"
+    },
+    "gathered_signal=3": {
+      "model": "logicandcomputings:block/lamp"
+    },
+    "gathered_signal=2": {
+      "model": "logicandcomputings:block/lamp"
+    },
+    "gathered_signal=7": {
+      "model": "logicandcomputings:block/lamp"
+    },
+    "gathered_signal=6": {
+      "model": "logicandcomputings:block/lamp"
+    },
+    "gathered_signal=5": {
+      "model": "logicandcomputings:block/lamp"
+    },
+    "gathered_signal=4": {
+      "model": "logicandcomputings:block/lamp"
+    },
+    "gathered_signal=11": {
+      "model": "logicandcomputings:block/lamp"
+    },
+    "gathered_signal=10": {
+      "model": "logicandcomputings:block/lamp"
+    },
+    "gathered_signal=9": {
+      "model": "logicandcomputings:block/lamp"
+    },
+    "gathered_signal=8": {
+      "model": "logicandcomputings:block/lamp"
+    },
+    "gathered_signal=14": {
+      "model": "logicandcomputings:block/lamp"
+    },
+    "gathered_signal=13": {
+      "model": "logicandcomputings:block/lamp"
+    },
+    "gathered_signal=12": {
       "model": "logicandcomputings:block/lamp"
     }
   }

@@ -3029,7 +3029,7 @@
       "name": "Lamp",
       "type": "block",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "lamp",
       "metadata": {
         "files": [
@@ -3272,6 +3272,52 @@
         ],
         "files": [
           "src/main/java/logicandcomputings/procedures/LampOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/lamp"
+    },
+    {
+      "name": "Returnbasegatheredsignal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "returnbasegatheredsignal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/logicandcomputings/procedures/ReturnbasegatheredsignalProcedure.java"
+        ]
+      },
+      "path": "~/lamp"
+    },
+    {
+      "name": "ColorRegistry",
+      "type": "code",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "color_registry",
+      "metadata": {
+        "files": [
+          "src/main/java/logicandcomputings/ColorRegistry.java"
+        ]
+      }
+    },
+    {
+      "name": "RegisterLampColor",
+      "type": "procedure",
+      "compiles": false,
+      "locked_code": true,
+      "registry_name": "register_lamp_color",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/logicandcomputings/procedures/RegisterLampColorProcedure.java"
         ]
       },
       "path": "~/lamp"

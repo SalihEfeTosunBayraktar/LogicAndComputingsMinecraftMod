@@ -3029,7 +3029,7 @@
       "name": "Lamp",
       "type": "block",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "lamp",
       "metadata": {
         "files": [
@@ -3038,8 +3038,11 @@
           "src/main/resources/assets/logicandcomputings/models/item/lamp.json",
           "src/main/java/logicandcomputings/block/entity/LampBlockEntity.java",
           "src/main/resources/assets/logicandcomputings/items/lamp.json",
+          "src/main/resources/assets/logicandcomputings/models/block/lamp_2.json",
           "src/main/resources/data/logicandcomputings/loot_table/blocks/lamp.json",
-          "src/main/resources/assets/logicandcomputings/blockstates/lamp.json"
+          "src/main/resources/assets/logicandcomputings/models/block/lamp_1.json",
+          "src/main/resources/assets/logicandcomputings/blockstates/lamp.json",
+          "src/main/resources/assets/logicandcomputings/models/block/lamp_0.json"
         ]
       },
       "path": "~/lamp"
@@ -3295,18 +3298,6 @@
         ]
       },
       "path": "~/lamp"
-    },
-    {
-      "name": "ColorRegistry",
-      "type": "code",
-      "compiles": false,
-      "locked_code": true,
-      "registry_name": "color_registry",
-      "metadata": {
-        "files": [
-          "src/main/java/logicandcomputings/ColorRegistry.java"
-        ]
-      }
     }
   ],
   "variable_elements": [],
