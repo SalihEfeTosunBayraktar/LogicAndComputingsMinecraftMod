@@ -24,7 +24,98 @@
     "power_15": {
       "name": "power_15",
       "map": {
-        "0": "lamp_15",
+        "0": "power_15",
+        "1": "case_base"
+      }
+    },
+    "power_2": {
+      "name": "power_2",
+      "map": {
+        "0": "power_2",
+        "1": "case_base"
+      }
+    },
+    "power_3": {
+      "name": "power_3",
+      "map": {
+        "0": "power_3",
+        "1": "case_base"
+      }
+    },
+    "power_4": {
+      "name": "power_4",
+      "map": {
+        "0": "power_4",
+        "1": "case_base"
+      }
+    },
+    "power_5": {
+      "name": "power_5",
+      "map": {
+        "0": "power_5",
+        "1": "case_base"
+      }
+    },
+    "power_6": {
+      "name": "power_6",
+      "map": {
+        "0": "power_6",
+        "1": "case_base"
+      }
+    },
+    "power_7": {
+      "name": "power_7",
+      "map": {
+        "0": "power_7",
+        "1": "case_base"
+      }
+    },
+    "power_8": {
+      "name": "power_8",
+      "map": {
+        "0": "power_8",
+        "1": "case_base"
+      }
+    },
+    "power_9": {
+      "name": "power_9",
+      "map": {
+        "0": "power9",
+        "1": "case_base"
+      }
+    },
+    "power_10": {
+      "name": "power_10",
+      "map": {
+        "0": "power_10",
+        "1": "case_base"
+      }
+    },
+    "power_11": {
+      "name": "power_11",
+      "map": {
+        "0": "power_11",
+        "1": "case_base"
+      }
+    },
+    "power_12": {
+      "name": "power_12",
+      "map": {
+        "0": "power_12",
+        "1": "case_base"
+      }
+    },
+    "power_13": {
+      "name": "power_13",
+      "map": {
+        "0": "power_13",
+        "1": "case_base"
+      }
+    },
+    "power_14": {
+      "name": "power_14",
+      "map": {
+        "0": "power_14",
         "1": "case_base"
       }
     }

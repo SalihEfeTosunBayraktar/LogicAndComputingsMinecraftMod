@@ -7,9 +7,9 @@ import net.neoforged.bus.api.Event;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
-
-import logicandcomputings.init.LogicandcomputingsModBlocks;
 
 import javax.annotation.Nullable;
 
@@ -25,7 +25,7 @@ public class ConvertsignaltoredstonesignalProcedure {
 	}
 
 	private static double execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == LogicandcomputingsModBlocks.WIRE.get()) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:wires")))) {
 			if (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "redstone_emits")) {
 				return getBlockNBTNumber(world, BlockPos.containing(x, y, z), "signal_value");
 			}

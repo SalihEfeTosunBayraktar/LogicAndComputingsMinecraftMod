@@ -4,7 +4,9 @@
   "workspacePanelSortAscending": true,
   "projectBrowserState": {
     "expandedPaths": [
-      "[, LogicAndComputings]"
+      "[, LogicAndComputings]",
+      "[, LogicAndComputings, Source (Gradle)]",
+      "[, LogicAndComputings, Source (Gradle), E:\\uygulamalar\\McreatorAIO\\McreatorWorkspace\\LogicAndComputings\\src\\main\\java\\logicandcomputings]"
     ]
   },
   "leftDockState": {

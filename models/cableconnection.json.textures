@@ -5,6 +5,12 @@
       "map": {
         "0": "cableconnection"
       }
+    },
+    "shielded": {
+      "name": "shielded",
+      "map": {
+        "0": "cableconnectionshielded"
+      }
     }
   }
 }

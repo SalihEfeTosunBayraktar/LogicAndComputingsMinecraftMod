@@ -1,0 +1,10 @@
+{
+  "parent": "logicandcomputings:custom/lamp",
+  "textures": {
+    "all": "minecraft:block/beacon",
+    "particle": "minecraft:block/beacon",
+    "0": "logicandcomputings:block/power_6",
+    "1": "logicandcomputings:block/case_base"
+  },
+  "render_type": "translucent"
+}

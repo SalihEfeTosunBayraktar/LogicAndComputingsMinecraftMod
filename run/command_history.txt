@@ -1,14 +1,3 @@
-/setblock 2 -60 -23 minecraft:redstone_block
-/setblock 2 -60 -23 minecraft:air
-/setblock 2 -60 -23 minecraft:redstone_block
-/setblock 2 -60 -23 minecraft:air
-/setblock 2 -60 -23 minecraft:redstone_block
-/setblock 2 -60 -23 minecraft:air
-/setblock 2 -60 -23 minecraft:redstone_block
-/setblock 2 -60 -23 minecraft:air
-/setblock 2 -60 -23 minecraft:redstone_block
-/setblock 2 -60 -23 minecraft:air
-/setblock 2 -60 -23 minecraft:redstone_block
 /setblock 2 -60 -23 minecraft:air
 /setblock 2 -60 -23 minecraft:redstone_block
 /setblock 2 -60 -23 minecraft:air
@@ -48,3 +37,14 @@
 /difficulty peaceful
 /give Dev logicandcomputings:lamp
 /time set night
+/give Dev logicandcomputings:pulsegenerator
+/tick freeze
+/tick step
+/tick unfreeze
+/tick freeze
+/tick unfreeze
+/tick freeze
+/tick step
+/tick step 10
+/tick step 5
+/tick unfreeze

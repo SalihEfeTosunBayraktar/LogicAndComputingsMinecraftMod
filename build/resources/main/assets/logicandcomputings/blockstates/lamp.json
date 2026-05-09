@@ -6,47 +6,47 @@
     "gathered_signal=1": {
       "model": "logicandcomputings:block/lamp_1"
     },
-    "gathered_signal=15": {
+    "gathered_signal=2": {
       "model": "logicandcomputings:block/lamp_2"
     },
     "gathered_signal=3": {
-      "model": "logicandcomputings:block/lamp"
-    },
-    "gathered_signal=2": {
-      "model": "logicandcomputings:block/lamp"
-    },
-    "gathered_signal=7": {
-      "model": "logicandcomputings:block/lamp"
-    },
-    "gathered_signal=6": {
-      "model": "logicandcomputings:block/lamp"
-    },
-    "gathered_signal=5": {
-      "model": "logicandcomputings:block/lamp"
+      "model": "logicandcomputings:block/lamp_3"
     },
     "gathered_signal=4": {
-      "model": "logicandcomputings:block/lamp"
+      "model": "logicandcomputings:block/lamp_4"
     },
-    "gathered_signal=11": {
-      "model": "logicandcomputings:block/lamp"
+    "gathered_signal=5": {
+      "model": "logicandcomputings:block/lamp_5"
     },
-    "gathered_signal=10": {
-      "model": "logicandcomputings:block/lamp"
+    "gathered_signal=6": {
+      "model": "logicandcomputings:block/lamp_6"
     },
-    "gathered_signal=9": {
-      "model": "logicandcomputings:block/lamp"
+    "gathered_signal=7": {
+      "model": "logicandcomputings:block/lamp_7"
     },
     "gathered_signal=8": {
-      "model": "logicandcomputings:block/lamp"
+      "model": "logicandcomputings:block/lamp_8"
     },
-    "gathered_signal=14": {
-      "model": "logicandcomputings:block/lamp"
+    "gathered_signal=9": {
+      "model": "logicandcomputings:block/lamp_9"
     },
-    "gathered_signal=13": {
-      "model": "logicandcomputings:block/lamp"
+    "gathered_signal=10": {
+      "model": "logicandcomputings:block/lamp_10"
+    },
+    "gathered_signal=11": {
+      "model": "logicandcomputings:block/lamp_11"
     },
     "gathered_signal=12": {
-      "model": "logicandcomputings:block/lamp"
+      "model": "logicandcomputings:block/lamp_12"
+    },
+    "gathered_signal=13": {
+      "model": "logicandcomputings:block/lamp_13"
+    },
+    "gathered_signal=14": {
+      "model": "logicandcomputings:block/lamp_14"
+    },
+    "gathered_signal=15": {
+      "model": "logicandcomputings:block/lamp_15"
     }
   }
 }

@@ -11,6 +11,18 @@
       "map": {
         "0": "wire_new_powered"
       }
+    },
+    "shielded": {
+      "name": "shielded",
+      "map": {
+        "0": "wire_shielded"
+      }
+    },
+    "shielded_powered": {
+      "name": "shielded_powered",
+      "map": {
+        "0": "wire_shielded_powered"
+      }
     }
   }
 }

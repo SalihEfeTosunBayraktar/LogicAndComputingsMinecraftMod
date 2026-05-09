@@ -18,6 +18,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
@@ -30,7 +31,6 @@ import net.minecraft.core.BlockPos;
 import logicandcomputings.world.inventory.WireGuiMenu;
 
 import logicandcomputings.init.LogicandcomputingsModItems;
-import logicandcomputings.init.LogicandcomputingsModBlocks;
 
 import logicandcomputings.LogicandcomputingsMod;
 
@@ -55,8 +55,8 @@ public class WireOnBlockRightclickedProcedure {
 		if (direction == null || entity == null)
 			return;
 		if (entity.isShiftKeyDown() == true) {
-			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == LogicandcomputingsModBlocks.WIRE.get()) {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == LogicandcomputingsModBlocks.WIRE.get().asItem()) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:wires")))) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("logic_and_computings:wires")))) {
 					if (direction == Direction.NORTH) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = BlockPos.containing(x, y, z);
@@ -205,7 +205,7 @@ public class WireOnBlockRightclickedProcedure {
 			}
 			if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:signal_source_blocks")))
 					|| (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:gate_blocks")))) {
-				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == LogicandcomputingsModBlocks.WIRE.get().asItem()) {
+				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(ResourceLocation.parse("logic_and_computings:wires")))) {
 					if (direction == Direction.NORTH) {
 						LogicandcomputingsMod.queueServerWork(1, () -> {
 							if (!world.isClientSide()) {
@@ -293,7 +293,7 @@ public class WireOnBlockRightclickedProcedure {
 				}
 			}
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == LogicandcomputingsModItems.CABLECONNECTOR.get()
-					&& (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == LogicandcomputingsModBlocks.WIRE.get()) {
+					&& (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:wires")))) {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getDoubleOr("mode", 0) == 4) {
 					if (entity instanceof ServerPlayer _ent) {
 						BlockPos _bpos = BlockPos.containing(x, y, z);

@@ -14,8 +14,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import logicandcomputings.init.LogicandcomputingsModBlocks;
-
 public class WireOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		String connected_other_blocks = "";
@@ -101,7 +99,7 @@ public class WireOnTickUpdateProcedure {
 			localmax = 0;
 			counter = 0;
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == LogicandcomputingsModBlocks.WIRE.get()) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:wires")))) {
 			for (int index0 = 0; index0 < 6; index0++) {
 				counter = counter + 1;
 				if (counter == 1) {
@@ -147,7 +145,7 @@ public class WireOnTickUpdateProcedure {
 					connected_other_blocks = "connected_up";
 					connected_this_block = "connected_down";
 				}
-				if ((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getBlock() == LogicandcomputingsModBlocks.WIRE.get()) {
+				if ((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:wires")))) {
 					if (getBlockNBTLogic(world, BlockPos.containing(signal_x, signal_y, signal_z), connected_other_blocks) == true && getBlockNBTLogic(world, BlockPos.containing(x, y, z), connected_this_block) == true) {
 						if (localmax < getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "signal_value")) {
 							localmax = getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "signal_value");
@@ -155,17 +153,31 @@ public class WireOnTickUpdateProcedure {
 					}
 				}
 				if ((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getBlock() == Blocks.REDSTONE_BLOCK && getBlockNBTLogic(world, BlockPos.containing(x, y, z), connected_this_block) == true) {
-					if (localmax < 15) {
-						localmax = 15;
+					if (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "redstone_emits") == false) {
+						if (localmax < 15) {
+							localmax = 15;
+						}
+					}
+				}
+				if (((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getBlock() == Blocks.LEVER
+						|| (world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).is(BlockTags.create(ResourceLocation.parse("minecraft:buttons"))))
+						&& getBlockNBTLogic(world, BlockPos.containing(x, y, z), connected_this_block) == true) {
+					if (getPropertyByName((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))), "powered") instanceof BooleanProperty _getbp56
+							&& (world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getValue(_getbp56)) {
+						if (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "redstone_emits") == false) {
+							if (localmax < 15) {
+								localmax = 15;
+							}
+						}
 					}
 				}
 				if ((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getBlock() == Blocks.REDSTONE_WIRE && getBlockNBTLogic(world, BlockPos.containing(x, y, z), connected_this_block) == true) {
 					if (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "redstone_emits") == false) {
-						if (localmax < (getPropertyByName((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))), "power") instanceof IntegerProperty _getip54
-								? (world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getValue(_getip54)
+						if (localmax < (getPropertyByName((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))), "power") instanceof IntegerProperty _getip63
+								? (world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getValue(_getip63)
 								: -1)) {
-							localmax = getPropertyByName((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))), "power") instanceof IntegerProperty _getip56
-									? (world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getValue(_getip56)
+							localmax = getPropertyByName((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))), "power") instanceof IntegerProperty _getip65
+									? (world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getValue(_getip65)
 									: -1;
 						}
 					}

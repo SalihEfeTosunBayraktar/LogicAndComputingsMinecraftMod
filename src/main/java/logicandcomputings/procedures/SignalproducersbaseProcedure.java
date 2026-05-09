@@ -13,8 +13,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import logicandcomputings.init.LogicandcomputingsModBlocks;
-
 public class SignalproducersbaseProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, double output_0, double output_1) {
 		double gathered_signal = 0;
@@ -39,7 +37,7 @@ public class SignalproducersbaseProcedure {
 				if ((getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z + 1))))) == (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z)))))) {
 					gathered_signal = getBlockNBTNumber(world, BlockPos.containing(x, y, z + 1), "signal_value");
 				}
-			} else if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == LogicandcomputingsModBlocks.WIRE.get() && getBlockNBTLogic(world, BlockPos.containing(x, y, z + 1), "connected_north")) {
+			} else if ((world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:wires"))) && getBlockNBTLogic(world, BlockPos.containing(x, y, z + 1), "connected_north")) {
 				gathered_signal = getBlockNBTNumber(world, BlockPos.containing(x, y, z + 1), "signal_value");
 			}
 		}
@@ -48,7 +46,7 @@ public class SignalproducersbaseProcedure {
 				if ((getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z - 1))))) == (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z)))))) {
 					gathered_signal = getBlockNBTNumber(world, BlockPos.containing(x, y, z - 1), "signal_value");
 				}
-			} else if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() == LogicandcomputingsModBlocks.WIRE.get() && getBlockNBTLogic(world, BlockPos.containing(x, y, z - 1), "connected_south")) {
+			} else if ((world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:wires"))) && getBlockNBTLogic(world, BlockPos.containing(x, y, z - 1), "connected_south")) {
 				gathered_signal = getBlockNBTNumber(world, BlockPos.containing(x, y, z - 1), "signal_value");
 			}
 		}
@@ -57,7 +55,7 @@ public class SignalproducersbaseProcedure {
 				if ((getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x + 1, y, z))))) == (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z)))))) {
 					gathered_signal = getBlockNBTNumber(world, BlockPos.containing(x + 1, y, z), "signal_value");
 				}
-			} else if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == LogicandcomputingsModBlocks.WIRE.get() && getBlockNBTLogic(world, BlockPos.containing(x + 1, y, z), "connected_west")) {
+			} else if ((world.getBlockState(BlockPos.containing(x + 1, y, z))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:wires"))) && getBlockNBTLogic(world, BlockPos.containing(x + 1, y, z), "connected_west")) {
 				gathered_signal = getBlockNBTNumber(world, BlockPos.containing(x + 1, y, z), "signal_value");
 			}
 		}
@@ -66,7 +64,7 @@ public class SignalproducersbaseProcedure {
 				if ((getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x - 1, y, z))))) == (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z)))))) {
 					gathered_signal = getBlockNBTNumber(world, BlockPos.containing(x - 1, y, z), "signal_value");
 				}
-			} else if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == LogicandcomputingsModBlocks.WIRE.get() && getBlockNBTLogic(world, BlockPos.containing(x - 1, y, z), "connected_east")) {
+			} else if ((world.getBlockState(BlockPos.containing(x - 1, y, z))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:wires"))) && getBlockNBTLogic(world, BlockPos.containing(x - 1, y, z), "connected_east")) {
 				gathered_signal = getBlockNBTNumber(world, BlockPos.containing(x - 1, y, z), "signal_value");
 			}
 		}
@@ -75,7 +73,7 @@ public class SignalproducersbaseProcedure {
 				if ((getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y - 1, z))))) == (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z)))))) {
 					gathered_signal = getBlockNBTNumber(world, BlockPos.containing(x, y - 1, z), "signal_value");
 				}
-			} else if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock() == LogicandcomputingsModBlocks.WIRE.get() && getBlockNBTLogic(world, BlockPos.containing(x, y - 1, z), "connected_up")) {
+			} else if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:wires"))) && getBlockNBTLogic(world, BlockPos.containing(x, y - 1, z), "connected_up")) {
 				gathered_signal = getBlockNBTNumber(world, BlockPos.containing(x, y - 1, z), "signal_value");
 			}
 		}
@@ -84,7 +82,7 @@ public class SignalproducersbaseProcedure {
 				if ((getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y + 1, z))))) == (getDirectionFromBlockState((world.getBlockState(BlockPos.containing(x, y, z)))))) {
 					gathered_signal = getBlockNBTNumber(world, BlockPos.containing(x, y + 1, z), "signal_value");
 				}
-			} else if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == LogicandcomputingsModBlocks.WIRE.get() && getBlockNBTLogic(world, BlockPos.containing(x, y + 1, z), "connected_down")) {
+			} else if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:wires"))) && getBlockNBTLogic(world, BlockPos.containing(x, y + 1, z), "connected_down")) {
 				gathered_signal = getBlockNBTNumber(world, BlockPos.containing(x, y + 1, z), "signal_value");
 			}
 		}
@@ -125,7 +123,7 @@ public class SignalproducersbaseProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null) {
-							_blockEntity.getPersistentData().putDouble("target_signal", (gathered_signal + 1));
+							_blockEntity.getPersistentData().putDouble("target_signal", gathered_signal);
 						}
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
@@ -154,7 +152,7 @@ public class SignalproducersbaseProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null) {
-							_blockEntity.getPersistentData().putDouble("target_signal", (gathered_signal + getBlockNBTNumber(world, BlockPos.containing(x, y, z), "adder_value") + 1));
+							_blockEntity.getPersistentData().putDouble("target_signal", (gathered_signal + getBlockNBTNumber(world, BlockPos.containing(x, y, z), "adder_value")));
 						}
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
