@@ -3311,6 +3311,20 @@
         ]
       },
       "path": "~/lamp"
+    },
+    {
+      "name": "MUXGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mux_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/logicandcomputings/client/gui/MUXGuiScreen.java",
+          "src/main/java/logicandcomputings/world/inventory/MUXGuiMenu.java"
+        ]
+      },
+      "path": "~/Buffer_proc"
     }
   ],
   "variable_elements": [],
@@ -3419,7 +3433,14 @@
       "gui.logicandcomputings.lamp_gui.button_u": "U",
       "gui.logicandcomputings.lamp_gui.button_s": "S",
       "gui.logicandcomputings.lamp_gui.button_empty": "N",
-      "gui.logicandcomputings.lamp_gui.button_w": "W"
+      "gui.logicandcomputings.lamp_gui.button_w": "W",
+      "gui.logicandcomputings.mux_gui.label_time": "Tick",
+      "gui.logicandcomputings.mux_gui.label_value1": "Value : ",
+      "gui.logicandcomputings.mux_gui.label_output_redstone": "Output",
+      "gui.logicandcomputings.mux_gui.label_delay1": "Delay :",
+      "gui.logicandcomputings.mux_gui.label_final_signal": "Final Signal",
+      "gui.logicandcomputings.mux_gui.label_delay": "Delay",
+      "gui.logicandcomputings.mux_gui.label_signal": "Signal"
     }
   },
   "metadata": {

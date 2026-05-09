@@ -10,8 +10,6 @@
 /setblock 2 -60 -23 minecraft:redstone_block
 /setblock 2 -60 -23 minecraft:air
 /setblock 2 -60 -23 minecraft:redstone_block
-/setblock 2 -60 -23 minecraft:air
-/setblock 2 -60 -23 minecraft:redstone_block
 /give Dev minecraft:command_block
 /setblock 3 -60 -5 minecraft:redstone_block
 /setblock 3 -60 -5 minecraft:air
@@ -47,4 +45,6 @@
 /tick step
 /tick step 10
 /tick step 5
+/tick unfreeze
+/tick freeze
 /tick unfreeze
