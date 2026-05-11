@@ -37,6 +37,7 @@ public class LogicandcomputingsModItems {
 	public static final DeferredItem<Item> PULSEGENERATOR;
 	public static final DeferredItem<Item> MUX_SWITCH2X1;
 	public static final DeferredItem<Item> LAMP;
+	public static final DeferredItem<Item> DECODER;
 	static {
 		BUFFER_GATE = block(LogicandcomputingsModBlocks.BUFFER_GATE);
 		WIRE = block(LogicandcomputingsModBlocks.WIRE);
@@ -51,6 +52,7 @@ public class LogicandcomputingsModItems {
 		PULSEGENERATOR = block(LogicandcomputingsModBlocks.PULSEGENERATOR);
 		MUX_SWITCH2X1 = block(LogicandcomputingsModBlocks.MUX_SWITCH2X1);
 		LAMP = block(LogicandcomputingsModBlocks.LAMP);
+		DECODER = block(LogicandcomputingsModBlocks.DECODER);
 	}
 
 	// Start of user code block custom items

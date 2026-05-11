@@ -32,6 +32,7 @@ public class LogicandcomputingsModTabs {
 			tabData.accept(LogicandcomputingsModBlocks.X_OR_GATE.get().asItem());
 			tabData.accept(LogicandcomputingsModBlocks.XN_OR_GATE.get().asItem());
 			tabData.accept(LogicandcomputingsModBlocks.MUX_SWITCH2X1.get().asItem());
+			tabData.accept(LogicandcomputingsModBlocks.DECODER.get().asItem());
 		}
 	}
 }

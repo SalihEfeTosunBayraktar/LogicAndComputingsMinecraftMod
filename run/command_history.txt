@@ -1,15 +1,5 @@
 /setblock 2 -60 -23 minecraft:air
 /setblock 2 -60 -23 minecraft:redstone_block
-/setblock 2 -60 -23 minecraft:air
-/setblock 2 -60 -23 minecraft:redstone_block
-/setblock 2 -60 -23 minecraft:air
-/setblock 2 -60 -23 minecraft:redstone_block
-/setblock 2 -60 -23 minecraft:air
-/setblock 2 -60 -23 minecraft:redstone_block
-/setblock 2 -60 -23 minecraft:air
-/setblock 2 -60 -23 minecraft:redstone_block
-/setblock 2 -60 -23 minecraft:air
-/setblock 2 -60 -23 minecraft:redstone_block
 /give Dev minecraft:command_block
 /setblock 3 -60 -5 minecraft:redstone_block
 /setblock 3 -60 -5 minecraft:air
@@ -48,3 +38,13 @@
 /tick unfreeze
 /tick freeze
 /tick unfreeze
+/difficulty peaceful
+/time set day
+/gamerule doDaylightCycle false
+/time set day
+/time set noon
+/time set 8000
+/time set 14000
+/time set 11000
+/time set 12000
+/give Dev logicandcomputings:pulsegenerator

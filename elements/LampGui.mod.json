@@ -105,24 +105,6 @@
           "y": 116,
           "locked": false
         }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_proc_return_gatheredsignal",
-          "text": {
-            "fixedValue": "",
-            "name": "ReturnGatheredsignal"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "hasShadow": false,
-          "x": 132,
-          "y": 44,
-          "locked": false
-        }
       }
     ],
     "gridSettings": {

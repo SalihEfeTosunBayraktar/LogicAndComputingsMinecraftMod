@@ -215,7 +215,7 @@
       "name": "WireOnBlockRightclicked"
     },
     "onTickUpdate": {
-      "name": "WireOnTickUpdate"
+      "name": "WireOnTickUpdate2"
     },
     "onBlockPlayedBy": {
       "name": "WireBlockAdded"

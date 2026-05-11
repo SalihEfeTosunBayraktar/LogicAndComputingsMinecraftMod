@@ -20,7 +20,11 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
-import logicandcomputings.init.*;
+import logicandcomputings.init.LogicandcomputingsModTabs;
+import logicandcomputings.init.LogicandcomputingsModMenus;
+import logicandcomputings.init.LogicandcomputingsModItems;
+import logicandcomputings.init.LogicandcomputingsModBlocks;
+import logicandcomputings.init.LogicandcomputingsModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -53,7 +57,6 @@ public class LogicandcomputingsMod {
 		LogicandcomputingsModItems.REGISTRY.register(modEventBus);
 		LogicandcomputingsModTabs.REGISTRY.register(modEventBus);
 		LogicandcomputingsModMenus.REGISTRY.register(modEventBus);
-		LogicandcomputingsModParticleTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

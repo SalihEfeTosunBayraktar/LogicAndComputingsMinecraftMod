@@ -1,8 +1,5 @@
 package logicandcomputings.block;
 
-import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraft.world.phys.shapes.Shapes;
-import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
@@ -14,7 +11,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -39,58 +35,15 @@ import logicandcomputings.procedures.BufferBlockAddedProcedure;
 
 import logicandcomputings.block.entity.NotGateBlockEntity;
 
-import java.util.function.Function;
-
 import io.netty.buffer.Unpooled;
 
 public class NotGateBlock extends Block implements EntityBlock {
 	public static final EnumProperty<Direction> FACING = DirectionalBlock.FACING;
 	public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
-	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public NotGateBlock(BlockBehaviour.Properties properties) {
-		super(properties.sound(SoundType.METAL).strength(1f, 10f).noCollission().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.IRON_XYLOPHONE));
+		super(properties.sound(SoundType.METAL).strength(1f, 10f).noCollission().instrument(NoteBlockInstrument.IRON_XYLOPHONE));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(POWERED, false));
-	}
-
-	private Function<BlockState, VoxelShape> makeShapes() {
-		return this.getShapeForEachState(state -> {
-			if (state.getValue(POWERED) == true) {
-				return switch (state.getValue(FACING)) {
-					default -> Shapes.or(box(7, 7, 8, 9, 10, 10), box(5, 7, 6, 11, 10, 8), box(3, 7, 4, 13, 10, 6), box(2, 7, 2, 14, 10, 4), box(7, 8, 0, 9, 9, 2), box(7, 8, 13, 9, 9, 16), box(7, 7, 12, 9, 10, 13), box(9, 7, 10, 10, 10, 12),
-							box(6, 7, 10, 7, 10, 12), box(7, 8, 10, 9, 9, 12));
-					case NORTH -> Shapes.or(box(7, 7, 6, 9, 10, 8), box(5, 7, 8, 11, 10, 10), box(3, 7, 10, 13, 10, 12), box(2, 7, 12, 14, 10, 14), box(7, 8, 14, 9, 9, 16), box(7, 8, 0, 9, 9, 3), box(7, 7, 3, 9, 10, 4), box(6, 7, 4, 7, 10, 6),
-							box(9, 7, 4, 10, 10, 6), box(7, 8, 4, 9, 9, 6));
-					case EAST -> Shapes.or(box(8, 7, 7, 10, 10, 9), box(6, 7, 5, 8, 10, 11), box(4, 7, 3, 6, 10, 13), box(2, 7, 2, 4, 10, 14), box(0, 8, 7, 2, 9, 9), box(13, 8, 7, 16, 9, 9), box(12, 7, 7, 13, 10, 9), box(10, 7, 6, 12, 10, 7),
-							box(10, 7, 9, 12, 10, 10), box(10, 8, 7, 12, 9, 9));
-					case WEST -> Shapes.or(box(6, 7, 7, 8, 10, 9), box(8, 7, 5, 10, 10, 11), box(10, 7, 3, 12, 10, 13), box(12, 7, 2, 14, 10, 14), box(14, 8, 7, 16, 9, 9), box(0, 8, 7, 3, 9, 9), box(3, 7, 7, 4, 10, 9), box(4, 7, 9, 6, 10, 10),
-							box(4, 7, 6, 6, 10, 7), box(4, 8, 7, 6, 9, 9));
-					case UP -> Shapes.or(box(7, 8, 7, 9, 10, 10), box(5, 6, 7, 11, 8, 10), box(3, 4, 7, 13, 6, 10), box(2, 2, 7, 14, 4, 10), box(7, 0, 8, 9, 2, 9), box(7, 13, 8, 9, 16, 9), box(7, 12, 7, 9, 13, 10), box(6, 10, 7, 7, 12, 10),
-							box(9, 10, 7, 10, 12, 10), box(7, 10, 8, 9, 12, 9));
-					case DOWN -> Shapes.or(box(7, 6, 6, 9, 8, 9), box(5, 8, 6, 11, 10, 9), box(3, 10, 6, 13, 12, 9), box(2, 12, 6, 14, 14, 9), box(7, 14, 7, 9, 16, 8), box(7, 0, 7, 9, 3, 8), box(7, 3, 6, 9, 4, 9), box(6, 4, 6, 7, 6, 9),
-							box(9, 4, 6, 10, 6, 9), box(7, 4, 7, 9, 6, 8));
-				};
-			}
-			return switch (state.getValue(FACING)) {
-				default -> Shapes.or(box(7, 7, 8, 9, 10, 10), box(5, 7, 6, 11, 10, 8), box(3, 7, 4, 13, 10, 6), box(2, 7, 2, 14, 10, 4), box(7, 8, 0, 9, 9, 2), box(7, 8, 13, 9, 9, 16), box(7, 7, 12, 9, 10, 13), box(9, 7, 10, 10, 10, 12),
-						box(6, 7, 10, 7, 10, 12), box(7, 8, 10, 9, 9, 12));
-				case NORTH -> Shapes.or(box(7, 7, 6, 9, 10, 8), box(5, 7, 8, 11, 10, 10), box(3, 7, 10, 13, 10, 12), box(2, 7, 12, 14, 10, 14), box(7, 8, 14, 9, 9, 16), box(7, 8, 0, 9, 9, 3), box(7, 7, 3, 9, 10, 4), box(6, 7, 4, 7, 10, 6),
-						box(9, 7, 4, 10, 10, 6), box(7, 8, 4, 9, 9, 6));
-				case EAST -> Shapes.or(box(8, 7, 7, 10, 10, 9), box(6, 7, 5, 8, 10, 11), box(4, 7, 3, 6, 10, 13), box(2, 7, 2, 4, 10, 14), box(0, 8, 7, 2, 9, 9), box(13, 8, 7, 16, 9, 9), box(12, 7, 7, 13, 10, 9), box(10, 7, 6, 12, 10, 7),
-						box(10, 7, 9, 12, 10, 10), box(10, 8, 7, 12, 9, 9));
-				case WEST -> Shapes.or(box(6, 7, 7, 8, 10, 9), box(8, 7, 5, 10, 10, 11), box(10, 7, 3, 12, 10, 13), box(12, 7, 2, 14, 10, 14), box(14, 8, 7, 16, 9, 9), box(0, 8, 7, 3, 9, 9), box(3, 7, 7, 4, 10, 9), box(4, 7, 9, 6, 10, 10),
-						box(4, 7, 6, 6, 10, 7), box(4, 8, 7, 6, 9, 9));
-				case UP -> Shapes.or(box(7, 8, 7, 9, 10, 10), box(5, 6, 7, 11, 8, 10), box(3, 4, 7, 13, 6, 10), box(2, 2, 7, 14, 4, 10), box(7, 0, 8, 9, 2, 9), box(7, 13, 8, 9, 16, 9), box(7, 12, 7, 9, 13, 10), box(6, 10, 7, 7, 12, 10),
-						box(9, 10, 7, 10, 12, 10), box(7, 10, 8, 9, 12, 9));
-				case DOWN -> Shapes.or(box(7, 6, 6, 9, 8, 9), box(5, 8, 6, 11, 10, 9), box(3, 10, 6, 13, 12, 9), box(2, 12, 6, 14, 14, 9), box(7, 14, 7, 9, 16, 8), box(7, 0, 7, 9, 3, 8), box(7, 3, 6, 9, 4, 9), box(6, 4, 6, 7, 6, 9),
-						box(9, 4, 6, 10, 6, 9), box(7, 4, 7, 9, 6, 8));
-			};
-		});
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return shapes.apply(state);
 	}
 
 	@Override
@@ -101,11 +54,6 @@ public class NotGateBlock extends Block implements EntityBlock {
 	@Override
 	public int getLightBlock(BlockState state) {
 		return 0;
-	}
-
-	@Override
-	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.empty();
 	}
 
 	@Override

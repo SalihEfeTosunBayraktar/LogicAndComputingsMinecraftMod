@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,powered=true": {
+      "model": "logicandcomputings:block/decoder_0"
+    },
+    "facing=north,powered=false": {
+      "model": "logicandcomputings:block/decoder"
+    },
+    "facing=east,powered=true": {
+      "model": "logicandcomputings:block/decoder_0",
+      "y": 90
+    },
+    "facing=east,powered=false": {
+      "model": "logicandcomputings:block/decoder",
+      "y": 90
+    },
+    "facing=south,powered=true": {
+      "model": "logicandcomputings:block/decoder_0",
+      "y": 180
+    },
+    "facing=south,powered=false": {
+      "model": "logicandcomputings:block/decoder",
+      "y": 180
+    },
+    "facing=west,powered=true": {
+      "model": "logicandcomputings:block/decoder_0",
+      "y": 270
+    },
+    "facing=west,powered=false": {
+      "model": "logicandcomputings:block/decoder",
+      "y": 270
+    }
+  }
+}

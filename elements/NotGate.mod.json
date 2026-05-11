@@ -25,7 +25,7 @@
         "renderType": 2,
         "customModelName": "not:not_powered",
         "particleTexture": "",
-        "hasCustomBoundingBox": true,
+        "hasCustomBoundingBox": false,
         "boundingBoxes": [
           {
             "mx": 7.0,
@@ -136,99 +136,18 @@
     "leavesParticleChance": 0.0,
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 7.0,
-        "my": 7.0,
-        "mz": 6.0,
-        "Mx": 9.0,
-        "My": 10.0,
-        "Mz": 8.0,
-        "subtract": false
-      },
-      {
-        "mx": 5.0,
-        "my": 7.0,
-        "mz": 8.0,
-        "Mx": 11.0,
-        "My": 10.0,
-        "Mz": 10.0,
-        "subtract": false
-      },
-      {
-        "mx": 3.0,
-        "my": 7.0,
-        "mz": 10.0,
-        "Mx": 13.0,
-        "My": 10.0,
-        "Mz": 12.0,
-        "subtract": false
-      },
-      {
-        "mx": 2.0,
-        "my": 7.0,
-        "mz": 12.0,
-        "Mx": 14.0,
-        "My": 10.0,
-        "Mz": 14.0,
-        "subtract": false
-      },
-      {
-        "mx": 7.0,
-        "my": 8.0,
-        "mz": 14.0,
-        "Mx": 9.0,
-        "My": 9.0,
-        "Mz": 16.0,
-        "subtract": false
-      },
-      {
-        "mx": 7.0,
-        "my": 8.0,
+        "mx": 0.0,
+        "my": 0.0,
         "mz": 0.0,
-        "Mx": 9.0,
-        "My": 9.0,
-        "Mz": 3.0,
-        "subtract": false
-      },
-      {
-        "mx": 7.0,
-        "my": 7.0,
-        "mz": 3.0,
-        "Mx": 9.0,
-        "My": 10.0,
-        "Mz": 4.0,
-        "subtract": false
-      },
-      {
-        "mx": 6.0,
-        "my": 7.0,
-        "mz": 4.0,
-        "Mx": 7.0,
-        "My": 10.0,
-        "Mz": 6.0,
-        "subtract": false
-      },
-      {
-        "mx": 9.0,
-        "my": 7.0,
-        "mz": 4.0,
-        "Mx": 10.0,
-        "My": 10.0,
-        "Mz": 6.0,
-        "subtract": false
-      },
-      {
-        "mx": 7.0,
-        "my": 8.0,
-        "mz": 4.0,
-        "Mx": 9.0,
-        "My": 9.0,
-        "Mz": 6.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],

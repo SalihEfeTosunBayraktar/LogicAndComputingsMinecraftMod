@@ -29,6 +29,7 @@ public class LogicandcomputingsModBlocks {
 	public static final DeferredBlock<Block> PULSEGENERATOR;
 	public static final DeferredBlock<Block> MUX_SWITCH2X1;
 	public static final DeferredBlock<Block> LAMP;
+	public static final DeferredBlock<Block> DECODER;
 	static {
 		BUFFER_GATE = register("buffer_gate", BufferBlock::new);
 		WIRE = register("wire", WireBlock::new);
@@ -42,6 +43,7 @@ public class LogicandcomputingsModBlocks {
 		PULSEGENERATOR = register("pulsegenerator", PulsegeneratorBlock::new);
 		MUX_SWITCH2X1 = register("mux_switch2x1", MuxSiwtchBlock::new);
 		LAMP = register("lamp", LampBlock::new);
+		DECODER = register("decoder", DecoderBlock::new);
 	}
 
 	// Start of user code block custom blocks

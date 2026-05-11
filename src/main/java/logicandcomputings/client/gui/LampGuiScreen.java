@@ -70,7 +70,6 @@ public class LampGuiScreen extends AbstractContainerScreen<LampGuiMenu> implemen
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.logicandcomputings.lamp_gui.label_proc_return_gatheredsignal"), 6, 7, -12829636, false);
 	}
 
 	@Override

@@ -35,6 +35,7 @@ public class LogicandcomputingsModBlockEntities {
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<PulsegeneratorBlockEntity>> PULSEGENERATOR = register("pulsegenerator", LogicandcomputingsModBlocks.PULSEGENERATOR, PulsegeneratorBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<MuxSiwtchBlockEntity>> MUX_SWITCH2X1 = register("mux_switch2x1", LogicandcomputingsModBlocks.MUX_SWITCH2X1, MuxSiwtchBlockEntity::new);
 	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<LampBlockEntity>> LAMP = register("lamp", LogicandcomputingsModBlocks.LAMP, LampBlockEntity::new);
+	public static final DeferredHolder<BlockEntityType<?>, BlockEntityType<DecoderBlockEntity>> DECODER = register("decoder", LogicandcomputingsModBlocks.DECODER, DecoderBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities
@@ -56,5 +57,6 @@ public class LogicandcomputingsModBlockEntities {
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, PULSEGENERATOR.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, MUX_SWITCH2X1.get(), SidedInvWrapper::new);
 		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, LAMP.get(), SidedInvWrapper::new);
+		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, DECODER.get(), SidedInvWrapper::new);
 	}
 }

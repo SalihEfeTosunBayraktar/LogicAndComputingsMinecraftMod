@@ -39,46 +39,15 @@ import logicandcomputings.procedures.BufferBlockAddedProcedure;
 
 import logicandcomputings.block.entity.BufferBlockEntity;
 
-import java.util.function.Function;
-
 import io.netty.buffer.Unpooled;
 
 public class BufferBlock extends Block implements EntityBlock {
 	public static final EnumProperty<Direction> FACING = DirectionalBlock.FACING;
 	public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
-	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public BufferBlock(BlockBehaviour.Properties properties) {
 		super(properties.sound(SoundType.METAL).strength(1f, 10f).noCollission().isRedstoneConductor((bs, br, bp) -> false).instrument(NoteBlockInstrument.IRON_XYLOPHONE));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(POWERED, false));
-	}
-
-	private Function<BlockState, VoxelShape> makeShapes() {
-		return this.getShapeForEachState(state -> {
-			if (state.getValue(POWERED) == true) {
-				return switch (state.getValue(FACING)) {
-					default -> Shapes.or(box(7, 7, 11, 9, 10, 13), box(5, 7, 9, 11, 10, 11), box(3, 7, 7, 13, 10, 9), box(2, 7, 5, 14, 10, 7), box(7, 8, 0, 9, 9, 5), box(7, 8, 13, 9, 9, 16));
-					case NORTH -> Shapes.or(box(7, 7, 3, 9, 10, 5), box(5, 7, 5, 11, 10, 7), box(3, 7, 7, 13, 10, 9), box(2, 7, 9, 14, 10, 11), box(7, 8, 11, 9, 9, 16), box(7, 8, 0, 9, 9, 3));
-					case EAST -> Shapes.or(box(11, 7, 7, 13, 10, 9), box(9, 7, 5, 11, 10, 11), box(7, 7, 3, 9, 10, 13), box(5, 7, 2, 7, 10, 14), box(0, 8, 7, 5, 9, 9), box(13, 8, 7, 16, 9, 9));
-					case WEST -> Shapes.or(box(3, 7, 7, 5, 10, 9), box(5, 7, 5, 7, 10, 11), box(7, 7, 3, 9, 10, 13), box(9, 7, 2, 11, 10, 14), box(11, 8, 7, 16, 9, 9), box(0, 8, 7, 3, 9, 9));
-					case UP -> Shapes.or(box(7, 11, 7, 9, 13, 10), box(5, 9, 7, 11, 11, 10), box(3, 7, 7, 13, 9, 10), box(2, 5, 7, 14, 7, 10), box(7, 0, 8, 9, 5, 9), box(7, 13, 8, 9, 16, 9));
-					case DOWN -> Shapes.or(box(7, 3, 6, 9, 5, 9), box(5, 5, 6, 11, 7, 9), box(3, 7, 6, 13, 9, 9), box(2, 9, 6, 14, 11, 9), box(7, 11, 7, 9, 16, 8), box(7, 0, 7, 9, 3, 8));
-				};
-			}
-			return switch (state.getValue(FACING)) {
-				default -> Shapes.or(box(7, 7, 11, 9, 10, 13), box(5, 7, 9, 11, 10, 11), box(3, 7, 7, 13, 10, 9), box(2, 7, 5, 14, 10, 7), box(7, 8, 0, 9, 9, 5), box(7, 8, 13, 9, 9, 16));
-				case NORTH -> Shapes.or(box(7, 7, 3, 9, 10, 5), box(5, 7, 5, 11, 10, 7), box(3, 7, 7, 13, 10, 9), box(2, 7, 9, 14, 10, 11), box(7, 8, 11, 9, 9, 16), box(7, 8, 0, 9, 9, 3));
-				case EAST -> Shapes.or(box(11, 7, 7, 13, 10, 9), box(9, 7, 5, 11, 10, 11), box(7, 7, 3, 9, 10, 13), box(5, 7, 2, 7, 10, 14), box(0, 8, 7, 5, 9, 9), box(13, 8, 7, 16, 9, 9));
-				case WEST -> Shapes.or(box(3, 7, 7, 5, 10, 9), box(5, 7, 5, 7, 10, 11), box(7, 7, 3, 9, 10, 13), box(9, 7, 2, 11, 10, 14), box(11, 8, 7, 16, 9, 9), box(0, 8, 7, 3, 9, 9));
-				case UP -> Shapes.or(box(7, 11, 7, 9, 13, 10), box(5, 9, 7, 11, 11, 10), box(3, 7, 7, 13, 9, 10), box(2, 5, 7, 14, 7, 10), box(7, 0, 8, 9, 5, 9), box(7, 13, 8, 9, 16, 9));
-				case DOWN -> Shapes.or(box(7, 3, 6, 9, 5, 9), box(5, 5, 6, 11, 7, 9), box(3, 7, 6, 13, 9, 9), box(2, 9, 6, 14, 11, 9), box(7, 11, 7, 9, 16, 8), box(7, 0, 7, 9, 3, 8));
-			};
-		});
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return shapes.apply(state);
 	}
 
 	@Override
