@@ -3436,37 +3436,6 @@
           "src/main/java/logicandcomputings/procedures/RedstonevaluereadingproduceProcedure.java"
         ]
       }
-    },
-    {
-      "name": "WireOnTickUpdate2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wire_on_tick_update_2",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/logicandcomputings/procedures/WireOnTickUpdate2Procedure.java"
-        ]
-      },
-      "path": "~/wire_proc/WireCodes"
     }
   ],
   "variable_elements": [],
