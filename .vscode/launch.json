@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Client",
+      "presentation": {
+        "group": "Mod Development - LogicAndComputings",
+        "order": 0
+      },
+      "projectName": "LogicAndComputings",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@E:\\uygulamalar\\McreatorAIO\\McreatorWorkspace\\LogicAndComputings\\build\\moddev\\clientRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@E:\\uygulamalar\\McreatorAIO\\McreatorWorkspace\\LogicAndComputings\\build\\moddev\\clientRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%E:\\uygulamalar\\McreatorAIO\\McreatorWorkspace\\LogicAndComputings\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    },
+    {
+      "type": "java",
+      "request": "launch",
+      "name": "Server",
+      "presentation": {
+        "group": "Mod Development - LogicAndComputings",
+        "order": 1
+      },
+      "projectName": "LogicAndComputings",
+      "mainClass": "net.neoforged.devlaunch.Main",
+      "args": [
+        "@E:\\uygulamalar\\McreatorAIO\\McreatorWorkspace\\LogicAndComputings\\build\\moddev\\serverRunProgramArgs.txt"
+      ],
+      "vmArgs": [
+        "@E:\\uygulamalar\\McreatorAIO\\McreatorWorkspace\\LogicAndComputings\\build\\moddev\\serverRunVmArgs.txt",
+        "-Dfml.modFolders\u003dmcreator%%E:\\uygulamalar\\McreatorAIO\\McreatorWorkspace\\LogicAndComputings\\bin\\main"
+      ],
+      "cwd": "${workspaceFolder}\\run",
+      "env": {},
+      "console": "internalConsole",
+      "shortenCommandLine": "none"
+    }
+  ]
+}

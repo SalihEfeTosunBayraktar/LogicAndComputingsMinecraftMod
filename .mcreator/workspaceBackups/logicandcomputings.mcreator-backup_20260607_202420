@@ -3393,6 +3393,49 @@
         ]
       },
       "path": "~/MuxSwitch"
+    },
+    {
+      "name": "Redstonevaluereadingproduce",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redstonevaluereadingproduce",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockx",
+            "type": "number"
+          },
+          {
+            "name": "blocky",
+            "type": "number"
+          },
+          {
+            "name": "blockz",
+            "type": "number"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/logicandcomputings/procedures/RedstonevaluereadingproduceProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
