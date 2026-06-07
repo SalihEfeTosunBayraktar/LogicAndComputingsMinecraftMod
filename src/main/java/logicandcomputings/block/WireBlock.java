@@ -28,7 +28,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import logicandcomputings.procedures.WireOnTickUpdateProcedure;
+import logicandcomputings.procedures.ModularWireOnTickUpdateProcedure;
 import logicandcomputings.procedures.WireOnBlockRightclickedProcedure;
 import logicandcomputings.procedures.WireBlockAddedProcedure;
 import logicandcomputings.procedures.ConvertsignaltoredstonesignalProcedure;
@@ -120,7 +120,7 @@ public class WireBlock extends Block implements EntityBlock {
 	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
-		WireOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		ModularWireOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 		world.scheduleTick(pos, this, 1);
 	}
 

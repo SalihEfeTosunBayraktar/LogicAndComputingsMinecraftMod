@@ -2,6 +2,7 @@ package logicandcomputings.procedures;
 
 import net.minecraft.world.level.block.state.properties.Property;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -153,6 +154,35 @@ public class WireOnTickUpdateProcedure {
 						}
 					}
 				}
+				if ((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:gate_blocks")))
+						&& getBlockNBTLogic(world, BlockPos.containing(x, y, z), connected_this_block) == true) {
+					if ((getDirectionFromBlockState((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))))) == flag_facing) {
+						if (localmax < getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "signal_value")) {
+							localmax = getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "signal_value");
+						}
+					}
+				}
+				if ((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).is(BlockTags.create(ResourceLocation.parse("logic_and_computings:signal_source_blocks")))
+						&& getBlockNBTLogic(world, BlockPos.containing(x, y, z), connected_this_block) == true) {
+					if (localmax < getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "signal_value")) {
+						localmax = getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "signal_value");
+					}
+				}
+				if ((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getBlock() == LogicandcomputingsModBlocks.DECODER.get()
+						&& getBlockNBTLogic(world, BlockPos.containing(x, y, z), connected_this_block) == true) {
+					double outX = getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "output_face_x");
+					double outY = getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "output_face_y");
+					double outZ = getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "output_face_z");
+					if (x == outX && y == outY && z == outZ) {
+						double outVal = getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "output_signal_value");
+						if (outVal == -1 || outVal == 0) {
+							outVal = getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "signal_value");
+						}
+						if (localmax < outVal) {
+							localmax = outVal;
+						}
+					}
+				}
 				if ((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getBlock() == Blocks.REDSTONE_BLOCK && getBlockNBTLogic(world, BlockPos.containing(x, y, z), connected_this_block) == true) {
 					if (localmax < 15) {
 						localmax = 15;
@@ -161,8 +191,8 @@ public class WireOnTickUpdateProcedure {
 				if (((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getBlock() == Blocks.LEVER
 						|| (world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).is(BlockTags.create(ResourceLocation.parse("minecraft:buttons"))))
 						&& getBlockNBTLogic(world, BlockPos.containing(x, y, z), connected_this_block) == true) {
-					if (getPropertyByName((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))), "powered") instanceof BooleanProperty _getbp55
-							&& (world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getValue(_getbp55)) {
+					if (getPropertyByName((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))), "powered") instanceof BooleanProperty _getbp61
+							&& (world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getValue(_getbp61)) {
 						if (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "redstone_emits") == false) {
 							if (localmax < 15) {
 								localmax = 15;
@@ -172,20 +202,12 @@ public class WireOnTickUpdateProcedure {
 				}
 				if ((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getBlock() == Blocks.REDSTONE_WIRE && getBlockNBTLogic(world, BlockPos.containing(x, y, z), connected_this_block) == true) {
 					if (getBlockNBTLogic(world, BlockPos.containing(x, y, z), "redstone_emits") == false) {
-						if (localmax < (getPropertyByName((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))), "power") instanceof IntegerProperty _getip62
-								? (world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getValue(_getip62)
+						if (localmax < (getPropertyByName((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))), "power") instanceof IntegerProperty _getip68
+								? (world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getValue(_getip68)
 								: -1)) {
-							localmax = getPropertyByName((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))), "power") instanceof IntegerProperty _getip64
-									? (world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getValue(_getip64)
+							localmax = getPropertyByName((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))), "power") instanceof IntegerProperty _getip70
+									? (world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getValue(_getip70)
 									: -1;
-						}
-					}
-				}
-				if ((world.getBlockState(BlockPos.containing(signal_x, signal_y, signal_z))).getBlock() == LogicandcomputingsModBlocks.DECODER.get() && getBlockNBTLogic(world, BlockPos.containing(x, y, z), connected_this_block) == true) {
-					if (x == getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "output_face_x") && y == getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "output_face_y")
-							&& z == getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "output_face_z")) {
-						if (localmax < getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "output_signal_value")) {
-							localmax = getBlockNBTNumber(world, BlockPos.containing(signal_x, signal_y, signal_z), "output_signal_value");
 						}
 					}
 				}
@@ -264,5 +286,13 @@ public class WireOnTickUpdateProcedure {
 		if (blockEntity != null)
 			return blockEntity.getPersistentData().getDoubleOr(tag, 0);
 		return -1;
+	}
+
+	private static Direction getDirectionFromBlockState(BlockState blockState) {
+		if (getPropertyByName(blockState, "facing") instanceof EnumProperty ep && ep.getValueClass() == Direction.class)
+			return (Direction) blockState.getValue(ep);
+		if (getPropertyByName(blockState, "axis") instanceof EnumProperty ep && ep.getValueClass() == Direction.Axis.class)
+			return Direction.fromAxisAndDirection((Direction.Axis) blockState.getValue(ep), Direction.AxisDirection.POSITIVE);
+		return Direction.NORTH;
 	}
 }

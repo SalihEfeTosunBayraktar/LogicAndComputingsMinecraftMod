@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "logicandcomputings:item/2x1mux"
+    "layer0": "logicandcomputings:item/decoder"
   },
   "render_type": "translucent"
 }

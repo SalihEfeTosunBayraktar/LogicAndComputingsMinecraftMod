@@ -32,6 +32,28 @@ public class DecoderSignalproducersProcedure {
 		String connected_face = "";
 		String dec0_connection = "";
 		String dec1_connection = "";
+		BlockPos inputPos = BlockPos.containing(x, y, z);
+		Direction facing = getBlockDirection(world, BlockPos.containing(x, y, z));
+		if (facing == Direction.NORTH) {
+			inputPos = BlockPos.containing(x, y, z - 1);
+		} else if (facing == Direction.SOUTH) {
+			inputPos = BlockPos.containing(x, y, z + 1);
+		} else if (facing == Direction.WEST) {
+			inputPos = BlockPos.containing(x - 1, y, z);
+		} else if (facing == Direction.EAST) {
+			inputPos = BlockPos.containing(x + 1, y, z);
+		}
+		double input_power = getBlockNBTNumber(world, inputPos, "signal_value");
+		if (!world.isClientSide()) {
+			BlockPos _bp = BlockPos.containing(x, y, z);
+			BlockEntity _blockEntity = world.getBlockEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_blockEntity != null) {
+				_blockEntity.getPersistentData().putDouble("output_signal_value", input_power);
+			}
+			if (world instanceof Level _level)
+				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
+		}
 		selection_power = 0;
 		if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.NORTH) {
 			dec0_x = x - 1;
@@ -40,7 +62,7 @@ public class DecoderSignalproducersProcedure {
 			dec1_x = x + 1;
 			dec1_y = y;
 			dec1_z = z;
-			selection_power = getBlockNBTNumber(world, BlockPos.containing(x, y + 1, z), "signal_value");
+			selection_power = getBlockNBTNumber(world, BlockPos.containing(x, y, z + 1), "signal_value");
 		} else if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.SOUTH) {
 			dec0_x = x + 1;
 			dec0_y = y;
@@ -48,7 +70,7 @@ public class DecoderSignalproducersProcedure {
 			dec1_x = x - 1;
 			dec1_y = y;
 			dec1_z = z;
-			selection_power = getBlockNBTNumber(world, BlockPos.containing(x, y + 1, z), "signal_value");
+			selection_power = getBlockNBTNumber(world, BlockPos.containing(x, y, z - 1), "signal_value");
 		} else if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.WEST) {
 			dec0_x = x;
 			dec0_y = y;
@@ -56,7 +78,7 @@ public class DecoderSignalproducersProcedure {
 			dec1_x = x;
 			dec1_y = y;
 			dec1_z = z - 1;
-			selection_power = getBlockNBTNumber(world, BlockPos.containing(x, y + 1, z), "signal_value");
+			selection_power = getBlockNBTNumber(world, BlockPos.containing(x + 1, y, z), "signal_value");
 		} else if ((getBlockDirection(world, BlockPos.containing(x, y, z))) == Direction.EAST) {
 			dec0_x = x;
 			dec0_y = y;
@@ -64,7 +86,7 @@ public class DecoderSignalproducersProcedure {
 			dec1_x = x;
 			dec1_y = y;
 			dec1_z = z + 1;
-			selection_power = getBlockNBTNumber(world, BlockPos.containing(x, y + 1, z), "signal_value");
+			selection_power = getBlockNBTNumber(world, BlockPos.containing(x - 1, y, z), "signal_value");
 		}
 		if (selection_power == 0) {
 			if (getBlockNBTNumber(world, BlockPos.containing(x, y, z), "signal_value") != getBlockNBTNumber(world, BlockPos.containing(x, y, z), "output_signal_value")) {

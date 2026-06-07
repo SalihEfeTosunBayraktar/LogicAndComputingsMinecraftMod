@@ -1,8 +1,9 @@
 {
-  "parent": "block/cube_all",
+  "parent": "logicandcomputings:custom/2x1mux",
   "textures": {
     "all": "minecraft:block/cherry_trapdoor",
-    "particle": "minecraft:block/cherry_trapdoor"
+    "particle": "minecraft:block/cherry_trapdoor",
+    "0": "logicandcomputings:block/decoder_not_powered"
   },
   "render_type": "solid"
 }
